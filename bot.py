@@ -3,6 +3,9 @@ import requests
 from slack_bolt import App
 from slack_bolt.adapter.socket_mode import SocketModeHandler
 from dotenv import load_dotenv
+import schedule
+import time
+import threading
 
 load_dotenv()
 
@@ -61,6 +64,7 @@ def fetch_leetcode_daily():
     }
 
     return hashMap
+
 def post_leetcode_question(hMap):
     title = hMap["title"]
     link = hMap["link"]
@@ -77,8 +81,14 @@ def post_leetcode_question(hMap):
     text=message
     )
     return message
+def run_scheduler():
+        while True:
+            schedule.run_pending()
+            time.sleep(60)
 if __name__ == "__main__":
-    print(post_leetcode_question(fetch_leetcode_daily()))
+    schedule.every().day.at("10:00").do(lambda: post_leetcode_question(fetch_leetcode_daily()))
+    scheduler_thread = threading.Thread(target=run_scheduler, daemon=True)
+    scheduler_thread.start()
     print("⚡️ Bot starting in Socket Mode...")
     try:
         handler = SocketModeHandler(app, app_token)
