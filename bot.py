@@ -37,35 +37,45 @@ def handle_member_joined(event, client):
 
 def fetch_leetcode_daily():
     url = "https://leetcode.com/graphql"
-    
-    query = """
-    query questionOfToday {
-    activeDailyCodingChallengeQuestion {
-        date
-        link
-        question {
-        title
-        difficulty
+
+    try:
+        query = """
+        query questionOfToday {
+        activeDailyCodingChallengeQuestion {
+            date
+            link
+            question {
+            title
+            difficulty
+            }
         }
-    }
-    }
-    """
-    payload = {"query": query}
-    response = requests.post(url, json=payload)
-    data = response.json()
-    title = data["data"]["activeDailyCodingChallengeQuestion"]["question"]["title"]
-    link = data["data"]["activeDailyCodingChallengeQuestion"]["link"]
-    difficulty = data["data"]["activeDailyCodingChallengeQuestion"]["question"]["difficulty"]
+        }
+        """
+        payload = {"query": query}
+        response = requests.post(url, json=payload)
+        data = response.json()
+        title = data["data"]["activeDailyCodingChallengeQuestion"]["question"]["title"]
+        link = data["data"]["activeDailyCodingChallengeQuestion"]["link"]
+        difficulty = data["data"]["activeDailyCodingChallengeQuestion"]["question"]["difficulty"]
 
-    hashMap = {
-        "title": title,
-        "link": f"https://leetcode.com{link}",
-        "difficulty": difficulty
-    }
+        hashMap = {
+            "title": title,
+            "link": f"https://leetcode.com{link}",
+            "difficulty": difficulty
+        }
 
-    return hashMap
+        return hashMap
+    except:
+        return None
+
 
 def post_leetcode_question(hMap):
+    if not hMap:
+        app.client.chat_postMessage(
+            channel="leetcode-grind",
+            text="LeetCode API decided to ghost me. In that case have a rest guys, we try again tomorrow."
+        )
+        return
     title = hMap["title"]
     link = hMap["link"]
     difficulty = hMap["difficulty"]
