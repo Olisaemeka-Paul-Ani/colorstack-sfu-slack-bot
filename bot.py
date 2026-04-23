@@ -7,6 +7,9 @@ import schedule
 import time
 import threading
 import logging
+import random
+
+
 load_dotenv()
 logging.basicConfig(
     level=logging.INFO,
@@ -40,6 +43,17 @@ def handle_member_joined(event, client):
 
 
     logging.info(f"Sent welcome message to {user_name}")
+
+MOTIVATIONAL_QUOTES = ["Make it inevitable — one focused rep at a time.",
+                      "Ship broken, fix fast, learn faster.",
+                      "Debug your fears like you debug your code — line by line.",
+                      "Consistency beats intensity every single time.",
+                      "Build in public. Fail in public. Grow in public.",
+                      "The best time to start was yesterday. The second best is right now.",
+                      "You're not behind. You're exactly where you need to be.",
+                      "Every expert was once a beginner who refused to quit.",
+                      "Don't just solve problems. Build solutions people remember.",
+                      "One cannot reap in spring what they do not sow in autumn."]
 
 
 
@@ -89,7 +103,7 @@ def post_leetcode_question(hMap):
     link = hMap["link"]
     difficulty = hMap["difficulty"]
     message = f"""
-    
+    *Motivational Quote*: {random.choice(MOTIVATIONAL_QUOTES)}
     *Today's LeetCode Question -- {difficulty}*
     {title}
     {link}
