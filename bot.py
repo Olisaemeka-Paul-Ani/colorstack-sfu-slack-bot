@@ -6,15 +6,22 @@ from dotenv import load_dotenv
 import schedule
 import time
 import threading
-
+import logging
 load_dotenv()
-
+logging.basicConfig(
+    level=logging.INFO,
+    format='%(asctime)s - %(levelname)s - %(message)s',
+    handlers=[
+        logging.FileHandler('bot.log'),
+        logging.StreamHandler()
+    ]
+)
 # Check if tokens are loaded
 bot_token = os.environ.get("SLACK_BOT_TOKEN")
 app_token = os.environ.get("SLACK_APP_TOKEN")
 
-print(f"Bot token loaded: {bot_token[:10]}..." if bot_token else "Bot token MISSING")
-print(f"App token loaded: {app_token[:10]}..." if app_token else "App token MISSING")
+logging.info(f"Bot token loaded: {bot_token[:10]}..." if bot_token else "Bot token MISSING")
+logging.info(f"App token loaded: {app_token[:10]}..." if app_token else "App token MISSING")
 
 app = App(token=bot_token)
 
@@ -32,7 +39,8 @@ def handle_member_joined(event, client):
     )
 
 
-    print(f"Sent welcome message to {user_name}")
+    logging.info(f"Sent welcome message to {user_name}")
+
 
 
 def fetch_leetcode_daily():
@@ -66,6 +74,7 @@ def fetch_leetcode_daily():
 
         return hashMap
     except:
+        logging.error("Failed to fetch LeetCode daily question")
         return None
 
 
@@ -99,11 +108,10 @@ if __name__ == "__main__":
     schedule.every().day.at("10:00").do(lambda: post_leetcode_question(fetch_leetcode_daily()))
     scheduler_thread = threading.Thread(target=run_scheduler, daemon=True)
     scheduler_thread.start()
-    print("⚡️ Bot starting in Socket Mode...")
+    logging.info("⚡️ Bot starting in Socket Mode...")
     try:
         handler = SocketModeHandler(app, app_token)
-        print("Socket handler created successfully")
+        logging.info("Socket handler created successfully")
         handler.start()
     except Exception as e:
-        print(f"Error starting bot: {e}")
-    
+        logging.error(f"Error starting bot: {e}")
