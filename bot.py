@@ -92,6 +92,8 @@ def fetch_leetcode_daily():
         return None
 
 
+
+
 def post_leetcode_question(hMap):
     if not hMap:
         app.client.chat_postMessage(
@@ -114,11 +116,35 @@ def post_leetcode_question(hMap):
     text=message
     )
     return message
+
+
+
+
+
+def post_motivational_image():
+    image_folder = "assets/motivational_images"
+    image_files = os.listdir(image_folder)
+    motivation_post = random.choice(image_files)
+    motivation_post_path = os.path.join(image_folder, motivation_post)
+    app.client.files_upload_v2(
+        channel="C0AUHLA18DV",  # Your #motivations channel
+        file= motivation_post_path,
+        title="Motivational post incoming!!!"
+    )
+    
+    logging.info(f"Sent motivational message to #motivation")
+    return
+
+
 def run_scheduler():
         while True:
             schedule.run_pending()
             time.sleep(60)
+
+
 if __name__ == "__main__":
+    schedule.every().monday.at("09:00").do(post_motivational_image)
+    schedule.every().thursday.at("09:00").do(post_motivational_image)
     schedule.every().day.at("10:00").do(lambda: post_leetcode_question(fetch_leetcode_daily()))
     scheduler_thread = threading.Thread(target=run_scheduler, daemon=True)
     scheduler_thread.start()
