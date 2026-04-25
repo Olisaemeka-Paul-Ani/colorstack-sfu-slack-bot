@@ -13,8 +13,6 @@ load_dotenv()
 
 URL = os.getenv("SUPABASE_URL")
 KEY = os.getenv("SUPABASE_KEY")
-print(f"URL: {URL}")
-print(f"KEY: {KEY}")
 
 supabase = create_client(URL, KEY)
 
@@ -57,7 +55,7 @@ def log_solve(user_id,difficulty):
         "difficulty": difficulty
     }
 
-    supabase.table("solves").insert(data).execute
+    supabase.table("solves").insert(data).execute()
     logging.info(f"Recorded Supabase entry for {user_id}")
     return
 @app.command("/leetcode")

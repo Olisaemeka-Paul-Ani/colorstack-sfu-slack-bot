@@ -136,3 +136,76 @@ Traceback (most recent call last):
         http2=True,
     )
 TypeError: Client.__init__() got an unexpected keyword argument 'proxy'
+2026-04-25 12:04:43,004 - INFO - Bot token loaded: xoxb-10940...
+2026-04-25 12:04:43,008 - INFO - App token loaded: xapp-1-A0A...
+2026-04-25 12:04:45,343 - INFO - Socket handler created successfully
+2026-04-25 12:04:46,702 - INFO - A new session has been established (session id: 1ab5e1d1-8b6f-4f04-9b55-f02cd45f9657)
+2026-04-25 12:04:46,702 - INFO - Bolt app is running!
+2026-04-25 12:04:46,786 - INFO - Starting to receive messages from a new connection (session id: 1ab5e1d1-8b6f-4f04-9b55-f02cd45f9657)
+2026-04-25 12:07:03,053 - INFO - Recorded Supabase entry for U0AUY4AKURE
+2026-04-25 12:13:45,242 - INFO - Recorded Supabase entry for U0AUY4AKURE
+2026-04-25 12:21:14,133 - ERROR - Failed to check the state of sock (session id: 1ab5e1d1-8b6f-4f04-9b55-f02cd45f9657, error: SSLEOFError, message: EOF occurred in violation of protocol (_ssl.c:2406))
+2026-04-25 12:21:24,255 - ERROR - Failed to check the state of sock (session id: 1ab5e1d1-8b6f-4f04-9b55-f02cd45f9657, error: SSLEOFError, message: EOF occurred in violation of protocol (_ssl.c:2406))
+2026-04-25 12:21:34,269 - ERROR - Failed to check the state of sock (session id: 1ab5e1d1-8b6f-4f04-9b55-f02cd45f9657, error: SSLEOFError, message: EOF occurred in violation of protocol (_ssl.c:2406))
+2026-04-25 12:21:59,085 - INFO - Bot token loaded: xoxb-10940...
+2026-04-25 12:21:59,087 - INFO - App token loaded: xapp-1-A0A...
+2026-04-25 12:22:01,545 - INFO - Socket handler created successfully
+2026-04-25 12:22:02,026 - INFO - A new session has been established (session id: f97ced21-ef23-46ce-9f05-17f5ad8b3445)
+2026-04-25 12:22:02,027 - INFO - Bolt app is running!
+2026-04-25 12:22:02,101 - INFO - Starting to receive messages from a new connection (session id: f97ced21-ef23-46ce-9f05-17f5ad8b3445)
+2026-04-25 12:23:33,254 - INFO - HTTP Request: POST https://vjfnhzaelswqfldoibpo.supabase.co/rest/v1/solves "HTTP/2 401 Unauthorized"
+2026-04-25 12:23:33,261 - ERROR - Failed to run listener function (error: {'code': '42501', 'details': None, 'hint': None, 'message': 'new row violates row-level security policy for table "solves"'})
+Traceback (most recent call last):
+  File "C:\Users\olian\Downloads\colorstack-slack-bot\venv312\Lib\site-packages\slack_bolt\listener\thread_runner.py", line 120, in run_ack_function_asynchronously
+    listener.run_ack_function(request=request, response=response)
+  File "C:\Users\olian\Downloads\colorstack-slack-bot\venv312\Lib\site-packages\slack_bolt\listener\custom_listener.py", line 53, in run_ack_function
+    return self.ack_function(
+           ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\olian\Downloads\colorstack-slack-bot\bot.py", line 66, in handle_command
+    log_solve(body["user_id"],body["text"])
+  File "C:\Users\olian\Downloads\colorstack-slack-bot\bot.py", line 58, in log_solve
+    supabase.table("solves").insert(data).execute()
+  File "C:\Users\olian\Downloads\colorstack-slack-bot\venv312\Lib\site-packages\postgrest\_sync\request_builder.py", line 78, in execute
+    raise APIError(r.json())
+postgrest.exceptions.APIError: {'code': '42501', 'details': None, 'hint': None, 'message': 'new row violates row-level security policy for table "solves"'}
+2026-04-25 12:30:56,063 - ERROR - Failed to check the state of sock (session id: f97ced21-ef23-46ce-9f05-17f5ad8b3445, error: SSLEOFError, message: EOF occurred in violation of protocol (_ssl.c:2406))
+2026-04-25 12:31:06,504 - ERROR - Failed to check the state of sock (session id: f97ced21-ef23-46ce-9f05-17f5ad8b3445, error: SSLEOFError, message: EOF occurred in violation of protocol (_ssl.c:2406))
+2026-04-25 12:31:16,515 - ERROR - Failed to check the state of sock (session id: f97ced21-ef23-46ce-9f05-17f5ad8b3445, error: SSLEOFError, message: EOF occurred in violation of protocol (_ssl.c:2406))
+2026-04-25 12:31:26,534 - ERROR - Failed to check the state of sock (session id: f97ced21-ef23-46ce-9f05-17f5ad8b3445, error: SSLEOFError, message: EOF occurred in violation of protocol (_ssl.c:2406))
+2026-04-25 12:31:36,544 - ERROR - Failed to check the state of sock (session id: f97ced21-ef23-46ce-9f05-17f5ad8b3445, error: SSLEOFError, message: EOF occurred in violation of protocol (_ssl.c:2406))
+2026-04-25 12:31:36,581 - INFO - The connection has been closed (session id: f97ced21-ef23-46ce-9f05-17f5ad8b3445)
+2026-04-25 12:31:36,625 - INFO - The session seems to be already closed. Reconnecting... (session id: f97ced21-ef23-46ce-9f05-17f5ad8b3445)
+2026-04-25 12:31:36,629 - INFO - Connecting to a new endpoint...
+2026-04-25 12:31:37,337 - INFO - The connection has been closed (session id: f97ced21-ef23-46ce-9f05-17f5ad8b3445)
+2026-04-25 12:31:37,338 - INFO - A new session has been established (session id: 8841eb6f-b1c8-4489-b955-0f1b46cc9d32)
+2026-04-25 12:31:37,339 - INFO - Connected to a new endpoint...
+2026-04-25 12:31:37,433 - INFO - Stopped receiving messages from a connection (session id: f97ced21-ef23-46ce-9f05-17f5ad8b3445)
+2026-04-25 12:31:37,545 - INFO - Starting to receive messages from a new connection (session id: 8841eb6f-b1c8-4489-b955-0f1b46cc9d32)
+2026-04-25 12:39:16,814 - ERROR - Failed to check the state of sock (session id: 8841eb6f-b1c8-4489-b955-0f1b46cc9d32, error: SSLEOFError, message: EOF occurred in violation of protocol (_ssl.c:2406))
+2026-04-25 12:39:29,945 - ERROR - Failed to check the state of sock (session id: 8841eb6f-b1c8-4489-b955-0f1b46cc9d32, error: SSLError, message: [SSL: BAD_LENGTH] bad length (_ssl.c:2406))
+2026-04-25 12:39:39,958 - ERROR - Failed to check the state of sock (session id: 8841eb6f-b1c8-4489-b955-0f1b46cc9d32, error: SSLEOFError, message: EOF occurred in violation of protocol (_ssl.c:2406))
+2026-04-25 12:39:49,994 - ERROR - Failed to check the state of sock (session id: 8841eb6f-b1c8-4489-b955-0f1b46cc9d32, error: SSLError, message: [SSL: BAD_LENGTH] bad length (_ssl.c:2406))
+2026-04-25 12:40:00,003 - ERROR - Failed to check the state of sock (session id: 8841eb6f-b1c8-4489-b955-0f1b46cc9d32, error: SSLError, message: [SSL: BAD_LENGTH] bad length (_ssl.c:2406))
+2026-04-25 12:40:00,527 - INFO - The connection has been closed (session id: 8841eb6f-b1c8-4489-b955-0f1b46cc9d32)
+2026-04-25 12:40:00,572 - INFO - The session seems to be already closed. Reconnecting... (session id: 8841eb6f-b1c8-4489-b955-0f1b46cc9d32)
+2026-04-25 12:40:00,574 - INFO - Connecting to a new endpoint...
+2026-04-25 12:40:01,497 - INFO - The connection has been closed (session id: 8841eb6f-b1c8-4489-b955-0f1b46cc9d32)
+2026-04-25 12:40:01,498 - INFO - A new session has been established (session id: 033afb2a-59bc-4fc1-bd6f-03ba02f81240)
+2026-04-25 12:40:01,499 - INFO - Connected to a new endpoint...
+2026-04-25 12:40:01,650 - INFO - Stopped receiving messages from a connection (session id: 8841eb6f-b1c8-4489-b955-0f1b46cc9d32)
+2026-04-25 12:40:01,765 - INFO - Starting to receive messages from a new connection (session id: 033afb2a-59bc-4fc1-bd6f-03ba02f81240)
+2026-04-25 12:40:11,509 - ERROR - Failed to check the state of sock (session id: 033afb2a-59bc-4fc1-bd6f-03ba02f81240, error: SSLEOFError, message: EOF occurred in violation of protocol (_ssl.c:2406))
+2026-04-25 12:40:21,518 - ERROR - Failed to check the state of sock (session id: 033afb2a-59bc-4fc1-bd6f-03ba02f81240, error: SSLEOFError, message: EOF occurred in violation of protocol (_ssl.c:2406))
+2026-04-25 12:40:31,557 - ERROR - Failed to check the state of sock (session id: 033afb2a-59bc-4fc1-bd6f-03ba02f81240, error: SSLEOFError, message: EOF occurred in violation of protocol (_ssl.c:2406))
+2026-04-25 12:40:41,560 - ERROR - Failed to check the state of sock (session id: 033afb2a-59bc-4fc1-bd6f-03ba02f81240, error: SSLError, message: [SSL: BAD_LENGTH] bad length (_ssl.c:2406))
+2026-04-25 12:40:51,567 - ERROR - Failed to check the state of sock (session id: 033afb2a-59bc-4fc1-bd6f-03ba02f81240, error: SSLEOFError, message: EOF occurred in violation of protocol (_ssl.c:2406))
+2026-04-25 12:40:51,583 - INFO - The connection has been closed (session id: 033afb2a-59bc-4fc1-bd6f-03ba02f81240)
+2026-04-25 12:40:51,596 - INFO - The session seems to be already closed. Reconnecting... (session id: 033afb2a-59bc-4fc1-bd6f-03ba02f81240)
+2026-04-25 12:40:51,597 - INFO - Connecting to a new endpoint...
+2026-04-25 12:40:52,313 - INFO - The connection has been closed (session id: 033afb2a-59bc-4fc1-bd6f-03ba02f81240)
+2026-04-25 12:40:52,315 - INFO - A new session has been established (session id: b2b6c7d7-c786-45d6-b349-b8f3f03eb195)
+2026-04-25 12:40:52,315 - INFO - Connected to a new endpoint...
+2026-04-25 12:40:52,406 - INFO - Stopped receiving messages from a connection (session id: 033afb2a-59bc-4fc1-bd6f-03ba02f81240)
+2026-04-25 12:40:52,508 - INFO - Starting to receive messages from a new connection (session id: b2b6c7d7-c786-45d6-b349-b8f3f03eb195)
+2026-04-25 12:44:28,225 - INFO - HTTP Request: POST https://vjfnhzaelswqfldoibpo.supabase.co/rest/v1/solves "HTTP/2 201 Created"
+2026-04-25 12:44:28,597 - INFO - Recorded Supabase entry for U0AUY4AKURE
