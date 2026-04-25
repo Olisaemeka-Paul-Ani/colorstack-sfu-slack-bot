@@ -8,9 +8,16 @@ import time
 import threading
 import logging
 import random
-
-
+from supabase import create_client
 load_dotenv()
+
+URL = os.getenv("SUPABASE_URL")
+KEY = os.getenv("SUPABASE_KEY")
+print(f"URL: {URL}")
+print(f"KEY: {KEY}")
+
+supabase = create_client(URL, KEY)
+
 logging.basicConfig(
     level=logging.INFO,
     format='%(asctime)s - %(levelname)s - %(message)s',
@@ -43,11 +50,22 @@ def handle_member_joined(event, client):
 
 
     logging.info(f"Sent welcome message to {user_name}")
+
+def log_solve(user_id,difficulty):
+    data = {
+        "user_id": user_id,
+        "difficulty": difficulty
+    }
+
+    supabase.table("solves").insert(data).execute
+    logging.info(f"Recorded Supabase entry for {user_id}")
+    return
 @app.command("/leetcode")
 def handle_command(ack, body, client):
     ack()
     print(body["user_id"])
     print(body["text"])
+    log_solve(body["user_id"],body["text"])
 
 MOTIVATIONAL_QUOTES = ["Make it inevitable — one focused rep at a time.",
                       "Ship broken, fix fast, learn faster.",

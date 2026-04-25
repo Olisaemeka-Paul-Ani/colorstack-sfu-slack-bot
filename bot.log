@@ -67,3 +67,72 @@
 2026-04-24 19:15:17,432 - INFO - A new session has been established (session id: cd075197-7107-4fac-bee6-2b505ef9b54b)
 2026-04-24 19:15:17,433 - INFO - Connected to a new endpoint...
 2026-04-24 19:15:17,533 - INFO - Starting to receive messages from a new connection (session id: cd075197-7107-4fac-bee6-2b505ef9b54b)
+2026-04-24 20:30:56,716 - INFO - Bot token loaded: xoxb-10940...
+2026-04-24 20:30:56,718 - INFO - App token loaded: xapp-1-A0A...
+2026-04-24 20:30:58,567 - INFO - Socket handler created successfully
+2026-04-24 20:30:59,042 - INFO - A new session has been established (session id: f7831c87-c9e5-4a85-89cc-758b942ec699)
+2026-04-24 20:30:59,043 - INFO - Bolt app is running!
+2026-04-24 20:30:59,117 - INFO - Starting to receive messages from a new connection (session id: f7831c87-c9e5-4a85-89cc-758b942ec699)
+2026-04-24 20:32:55,147 - ERROR - Failed to run listener function (error: Client.__init__() got an unexpected keyword argument 'proxy')
+Traceback (most recent call last):
+  File "C:\Users\olian\Downloads\colorstack-slack-bot\venv\Lib\site-packages\slack_bolt\listener\thread_runner.py", line 120, in run_ack_function_asynchronously
+    listener.run_ack_function(request=request, response=response)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\olian\Downloads\colorstack-slack-bot\venv\Lib\site-packages\slack_bolt\listener\custom_listener.py", line 53, in run_ack_function
+    return self.ack_function(
+           ~~~~~~~~~~~~~~~~~^
+        **build_required_kwargs(
+        ^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<5 lines>...
+        )
+        ^
+    )
+    ^
+  File "c:\Users\olian\Downloads\colorstack-slack-bot\bot.py", line 68, in handle_command
+    log_solve(body["user_id"],body["text"])
+    ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\olian\Downloads\colorstack-slack-bot\bot.py", line 60, in log_solve
+    supabase.table("scores").insert(data).execute
+    ~~~~~~~~~~~~~~^^^^^^^^^^
+  File "C:\Users\olian\Downloads\colorstack-slack-bot\venv\Lib\site-packages\supabase\_sync\client.py", line 124, in table
+    return self.from_(table_name)
+           ~~~~~~~~~~^^^^^^^^^^^^
+  File "C:\Users\olian\Downloads\colorstack-slack-bot\venv\Lib\site-packages\supabase\_sync\client.py", line 144, in from_
+    return self.postgrest.from_(table_name)
+           ^^^^^^^^^^^^^^
+  File "C:\Users\olian\Downloads\colorstack-slack-bot\venv\Lib\site-packages\supabase\_sync\client.py", line 171, in postgrest
+    self._postgrest = self._init_postgrest_client(
+                      ~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        rest_url=self.rest_url,
+        ^^^^^^^^^^^^^^^^^^^^^^^
+    ...<2 lines>...
+        timeout=self.options.postgrest_client_timeout,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\olian\Downloads\colorstack-slack-bot\venv\Lib\site-packages\supabase\_sync\client.py", line 262, in _init_postgrest_client
+    return SyncPostgrestClient(
+        rest_url,
+    ...<3 lines>...
+        verify=verify,
+    )
+  File "C:\Users\olian\Downloads\colorstack-slack-bot\venv\Lib\site-packages\postgrest\_sync\client.py", line 34, in __init__
+    BasePostgrestClient.__init__(
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        self,
+        ^^^^^
+    ...<5 lines>...
+        proxy=proxy,
+        ^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\olian\Downloads\colorstack-slack-bot\venv\Lib\site-packages\postgrest\base_client.py", line 29, in __init__
+    self.session = self.create_session(base_url, headers, timeout, verify, proxy)
+                   ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\olian\Downloads\colorstack-slack-bot\venv\Lib\site-packages\postgrest\_sync\client.py", line 53, in create_session
+    return SyncClient(
+        base_url=base_url,
+    ...<5 lines>...
+        http2=True,
+    )
+TypeError: Client.__init__() got an unexpected keyword argument 'proxy'
