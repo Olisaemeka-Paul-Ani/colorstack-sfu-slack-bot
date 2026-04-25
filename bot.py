@@ -43,6 +43,11 @@ def handle_member_joined(event, client):
 
 
     logging.info(f"Sent welcome message to {user_name}")
+@app.command("/leetcode")
+def handle_command(ack, body, client):
+    ack()
+    print(body["user_id"])
+    print(body["text"])
 
 MOTIVATIONAL_QUOTES = ["Make it inevitable — one focused rep at a time.",
                       "Ship broken, fix fast, learn faster.",
