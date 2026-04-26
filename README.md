@@ -18,7 +18,7 @@ Slack Bot built using GraphQL, Python, Supabase and LeetCode API for automation 
 
 - **Error Handling for invalid and empty commands**: A warm message sent to the user's direct messages whenever an invalid command (like /leetcode fake-command) or an empty command (/leetcode) has been sent.
 
--**AWS EC2 deployment**: Slack Bot deployed on an Amazon Web Services EC2 server for 24/7 uptime.
+- **AWS EC2 deployment**: Slack Bot deployed on an Amazon Web Services EC2 server for 24/7 uptime.
 
 
 ## Setup
@@ -39,12 +39,13 @@ Slack Bot built using GraphQL, Python, Supabase and LeetCode API for automation 
 - **Python logging module**
 - **schedule library (for daily scheduling)**
 -**Supabase (for data persistence)**
+- **AWS EC2 deployment for 24/7 uptime**
 
 ## Roadmap
 
 - [ ] Job scraping and posting for internship/new grad roles
 - [ ] Reaction-based channel interactions
-- [ ] AWS EC2 deployment for 24/7 uptime
+
 
 ## Author
    
