@@ -1,3 +1,4 @@
+import collections
 import os
 import requests
 from slack_bolt import App
@@ -9,6 +10,7 @@ import threading
 import logging
 import random
 from supabase import create_client
+from collections import defaultdict
 load_dotenv()
 
 URL = os.getenv("SUPABASE_URL")
@@ -58,12 +60,62 @@ def log_solve(user_id,difficulty):
     supabase.table("solves").insert(data).execute()
     logging.info(f"Recorded Supabase entry for {user_id}")
     return
+
+
+def get_leaderboard():
+    response = supabase.table("solves").select("*").execute()
+    return response.data
+
+def calculate_leaderboard(data):
+    hashMap = collections.defaultdict(int)
+    i=0
+    while i < len(data):
+        hashMap[data[i]["user_id"]]=hashMap[data[i]["user_id"]]+1
+        i=i+1
+    leaderboard = sorted(hashMap.items(), key = lambda item: item[1], reverse = True)
+    return leaderboard
+
+
+def format_leaderboard(client, leaderboard):
+    i=0
+    message = "🏆 LEETCODE LEADERBOARD 🏆\n\n"
+    while i < len(leaderboard):
+        user_info = client.users_info(user=leaderboard[i][0])
+        real_name = user_info["user"]["real_name"]
+        message = message + f"{i+1}.) {real_name}, score: {leaderboard[i][1]}.\n"
+        i=i+1
+    return message
+
+
 @app.command("/leetcode")
 def handle_command(ack, body, client):
     ack()
     print(body["user_id"])
     print(body["text"])
-    log_solve(body["user_id"],body["text"])
+    if body["text"] == "":
+        logging.info(f"Invalid command sent by{body["user_id"]}")
+        client.chat_postMessage(
+        channel=body["user_id"] ,
+        text=f"You sent an incomplete/empty command, user {body["user_id"]}. Please use a different command."
+        )
+    elif  body["text"] == "leaderboard":
+        logging.info(f"Leaderboard request called by {body["user_id"]}")
+        client.chat_postMessage(
+        channel= "leetcode-grind",
+        text=format_leaderboard(client, calculate_leaderboard(get_leaderboard()))
+        )
+    elif body["text"].split()[1] == "Easy" or  body["text"].split()[1] == "Medium" or body["text"].split()[1] == "Hard":
+        log_solve(body["user_id"],body["text"].split()[1])
+    else:
+        logging.info(f"Invalid command sent by{body["user_id"]}")
+        client.chat_postMessage(
+        channel=body["user_id"] ,
+        text=f"Invalid command, user {body["user_id"]}. Please use a different command."
+        )
+
+    
+        
+
 
 MOTIVATIONAL_QUOTES = ["Make it inevitable — one focused rep at a time.",
                       "Ship broken, fix fast, learn faster.",

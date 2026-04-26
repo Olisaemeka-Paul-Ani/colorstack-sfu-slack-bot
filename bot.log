@@ -209,3 +209,64 @@ postgrest.exceptions.APIError: {'code': '42501', 'details': None, 'hint': None, 
 2026-04-25 12:40:52,508 - INFO - Starting to receive messages from a new connection (session id: b2b6c7d7-c786-45d6-b349-b8f3f03eb195)
 2026-04-25 12:44:28,225 - INFO - HTTP Request: POST https://vjfnhzaelswqfldoibpo.supabase.co/rest/v1/solves "HTTP/2 201 Created"
 2026-04-25 12:44:28,597 - INFO - Recorded Supabase entry for U0AUY4AKURE
+2026-04-25 19:07:31,155 - INFO - Bot token loaded: xoxb-10940...
+2026-04-25 19:07:31,158 - INFO - App token loaded: xapp-1-A0A...
+2026-04-25 19:20:05,408 - INFO - Bot token loaded: xoxb-10940...
+2026-04-25 19:20:05,410 - INFO - App token loaded: xapp-1-A0A...
+2026-04-25 19:20:07,850 - INFO - Socket handler created successfully
+2026-04-25 19:20:08,675 - INFO - A new session has been established (session id: f5c1c508-b3bd-4449-8ba7-fb04046a57e9)
+2026-04-25 19:20:08,676 - INFO - Bolt app is running!
+2026-04-25 19:20:08,735 - INFO - Starting to receive messages from a new connection (session id: f5c1c508-b3bd-4449-8ba7-fb04046a57e9)
+2026-04-25 19:21:44,762 - ERROR - Failed to run listener function (error: list index out of range)
+Traceback (most recent call last):
+  File "C:\Users\olian\Downloads\colorstack-slack-bot\venv312\Lib\site-packages\slack_bolt\listener\thread_runner.py", line 120, in run_ack_function_asynchronously
+    listener.run_ack_function(request=request, response=response)
+  File "C:\Users\olian\Downloads\colorstack-slack-bot\venv312\Lib\site-packages\slack_bolt\listener\custom_listener.py", line 53, in run_ack_function
+    return self.ack_function(
+           ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\olian\Downloads\colorstack-slack-bot\bot.py", line 101, in handle_command
+    elif body["text"].split()[1] == "Easy" or  body["text"].split()[1] == "Medium" or body["text"].split()[1] == "Hard":
+         ~~~~~~~~~~~~~~~~~~~~^^^
+IndexError: list index out of range
+2026-04-25 19:23:30,354 - INFO - Bot token loaded: xoxb-10940...
+2026-04-25 19:23:30,355 - INFO - App token loaded: xapp-1-A0A...
+2026-04-25 19:23:32,581 - INFO - Socket handler created successfully
+2026-04-25 19:23:33,051 - INFO - A new session has been established (session id: df6fd20b-e40f-4581-98c3-73373c002c91)
+2026-04-25 19:23:33,051 - INFO - Bolt app is running!
+2026-04-25 19:23:33,132 - INFO - Starting to receive messages from a new connection (session id: df6fd20b-e40f-4581-98c3-73373c002c91)
+2026-04-25 19:23:50,745 - INFO - Leaderboard request called by U0AUY4AKURE
+2026-04-25 19:23:53,854 - INFO - HTTP Request: GET https://vjfnhzaelswqfldoibpo.supabase.co/rest/v1/solves?select=%2A "HTTP/2 200 OK"
+2026-04-25 19:23:54,039 - ERROR - Failed to run listener function (error: The request to the Slack API failed. (url: https://slack.com/api/users.info)
+The server responded with: {'ok': False, 'error': 'user_not_found'})
+Traceback (most recent call last):
+  File "C:\Users\olian\Downloads\colorstack-slack-bot\venv312\Lib\site-packages\slack_bolt\listener\thread_runner.py", line 120, in run_ack_function_asynchronously
+    listener.run_ack_function(request=request, response=response)
+  File "C:\Users\olian\Downloads\colorstack-slack-bot\venv312\Lib\site-packages\slack_bolt\listener\custom_listener.py", line 53, in run_ack_function
+    return self.ack_function(
+           ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\olian\Downloads\colorstack-slack-bot\bot.py", line 105, in handle_command
+    text=format_leaderboard(client, calculate_leaderboard(get_leaderboard()))
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\olian\Downloads\colorstack-slack-bot\bot.py", line 83, in format_leaderboard
+    user_info = client.users_info(user=leaderboard[i][0])
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\olian\Downloads\colorstack-slack-bot\venv312\Lib\site-packages\slack_sdk\web\client.py", line 5644, in users_info
+    return self.api_call("users.info", http_verb="GET", params=kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\olian\Downloads\colorstack-slack-bot\venv312\Lib\site-packages\slack_sdk\web\base_client.py", line 169, in api_call
+    return self._sync_send(api_url=api_url, req_args=req_args)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\olian\Downloads\colorstack-slack-bot\venv312\Lib\site-packages\slack_sdk\web\base_client.py", line 200, in _sync_send
+    return self._urllib_api_call(
+           ^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\olian\Downloads\colorstack-slack-bot\venv312\Lib\site-packages\slack_sdk\web\base_client.py", line 331, in _urllib_api_call
+    ).validate()
+      ^^^^^^^^^^
+  File "C:\Users\olian\Downloads\colorstack-slack-bot\venv312\Lib\site-packages\slack_sdk\web\slack_response.py", line 195, in validate
+    raise e.SlackApiError(message=msg, response=self)
+slack_sdk.errors.SlackApiError: The request to the Slack API failed. (url: https://slack.com/api/users.info)
+The server responded with: {'ok': False, 'error': 'user_not_found'}
+2026-04-25 19:29:57,568 - INFO - HTTP Request: POST https://vjfnhzaelswqfldoibpo.supabase.co/rest/v1/solves "HTTP/2 201 Created"
+2026-04-25 19:29:57,732 - INFO - Recorded Supabase entry for U0AUY4AKURE
+2026-04-25 19:30:59,630 - INFO - Leaderboard request called by U0AUY4AKURE
+2026-04-25 19:30:59,892 - INFO - HTTP Request: GET https://vjfnhzaelswqfldoibpo.supabase.co/rest/v1/solves?select=%2A "HTTP/2 200 OK"
