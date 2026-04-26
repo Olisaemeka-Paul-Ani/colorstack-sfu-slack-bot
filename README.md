@@ -10,7 +10,7 @@ Slack Bot built using GraphQL, Python, Supabase and LeetCode API for automation 
 
 - **Error Handling & Logging**: Gracefully handles API failures and logs all events to `bot.log` for debugging
 
--**Biweekly motivational quote posts to #motivations**: Automated sendding of motivational images to the Slack's dedicated channel, boosting team morale. 
+- **Biweekly motivational quote posts to #motivations**: Automated sendding of motivational images to the Slack's dedicated channel, boosting team morale. 
 
 - **Supabase Integration** Uses a custom command to log all solved questions into a PostGreSQL database, allowing for persistence and "immortality" of data. triggered by typing [/leetcode solved Easy|Medium|Hard] after submitting a question to the #leetcode-grind channel
 
