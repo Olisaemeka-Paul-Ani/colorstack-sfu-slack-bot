@@ -11,6 +11,7 @@ import logging
 import random
 from supabase import create_client
 from collections import defaultdict
+import requests
 load_dotenv()
 
 URL = os.getenv("SUPABASE_URL")
@@ -214,8 +215,40 @@ def run_scheduler():
             schedule.run_pending()
             time.sleep(60)
 
+def fetch_github_jobs():
+    response = requests.get("https://raw.githubusercontent.com/negarprh/Canadian-Tech-Internships-2026/refs/heads/main/README.md")
+    if response.status_code != 200:
+        logging.error(f"Failed to fetch GitHub jobs, status code: {response.status_code}")
+        return None
+    logging.info(f"GitHub scrape request called")
+    return response.text
 
+def parse_jobs(string):
+    lines = string.split('\n')
+    i=0
+    output = []
+    while i < len(lines):
+        if "|" in lines[i] and "Company" not in lines[i] :
+            parts = lines[i].split('|')
+            company = parts[1].strip()
+            if company == '--------' or company == '↳':
+                i = i + 1
+                continue
+            role = parts[2].strip()
+            location = parts[3].strip()
+            date_posted = parts[5].strip()
+            output.append({
+                "company": company,
+                "role":role,
+                "location": location,
+                "date_posted":date_posted
+            })
+        i=i+1
+    return output
 if __name__ == "__main__":
+    markdown = fetch_github_jobs()
+    jobs = parse_jobs(markdown)
+    print(jobs[0])
     schedule.every().monday.at("09:00").do(post_motivational_image)
     schedule.every().thursday.at("09:00").do(post_motivational_image)
     schedule.every().day.at("10:00").do(lambda: post_leetcode_question(fetch_leetcode_daily()))

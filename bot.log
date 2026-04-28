@@ -270,3 +270,486 @@ The server responded with: {'ok': False, 'error': 'user_not_found'}
 2026-04-25 19:29:57,732 - INFO - Recorded Supabase entry for U0AUY4AKURE
 2026-04-25 19:30:59,630 - INFO - Leaderboard request called by U0AUY4AKURE
 2026-04-25 19:30:59,892 - INFO - HTTP Request: GET https://vjfnhzaelswqfldoibpo.supabase.co/rest/v1/solves?select=%2A "HTTP/2 200 OK"
+2026-04-27 14:07:01,307 - INFO - Bot token loaded: xoxb-10940...
+2026-04-27 14:07:01,310 - INFO - App token loaded: xapp-1-A0A...
+2026-04-27 14:07:07,660 - INFO - GitHub scrape request called
+2026-04-27 14:07:07,690 - INFO - Socket handler created successfully
+2026-04-27 14:07:08,227 - INFO - A new session has been established (session id: 0e031c19-54c9-4815-8caf-44562280b535)
+2026-04-27 14:07:08,228 - INFO - Bolt app is running!
+2026-04-27 14:07:08,261 - INFO - Starting to receive messages from a new connection (session id: 0e031c19-54c9-4815-8caf-44562280b535)
+2026-04-27 14:36:19,866 - INFO - Unable to send a ping message. Closing the connection... (session id: 0e031c19-54c9-4815-8caf-44562280b535, reason: TLS/SSL connection has been closed (EOF) (_ssl.c:2406))
+2026-04-27 14:36:19,930 - INFO - The connection has been closed (session id: 0e031c19-54c9-4815-8caf-44562280b535)
+2026-04-27 14:36:19,974 - INFO - The session seems to be already closed. Reconnecting... (session id: 0e031c19-54c9-4815-8caf-44562280b535)
+2026-04-27 14:36:19,978 - INFO - Connecting to a new endpoint...
+2026-04-27 14:36:21,790 - INFO - The connection has been closed (session id: 0e031c19-54c9-4815-8caf-44562280b535)
+2026-04-27 14:36:21,791 - INFO - A new session has been established (session id: 0db02e24-2ff1-4654-a024-1a50b6ac44ec)
+2026-04-27 14:36:21,791 - INFO - Connected to a new endpoint...
+2026-04-27 14:36:21,963 - INFO - Stopped receiving messages from a connection (session id: 0e031c19-54c9-4815-8caf-44562280b535)
+2026-04-27 14:36:22,066 - INFO - Starting to receive messages from a new connection (session id: 0db02e24-2ff1-4654-a024-1a50b6ac44ec)
+2026-04-27 14:36:22,075 - INFO - Connecting to a new endpoint...
+2026-04-27 14:36:28,098 - INFO - The connection has been closed (session id: 0db02e24-2ff1-4654-a024-1a50b6ac44ec)
+2026-04-27 14:36:28,099 - INFO - A new session has been established (session id: b5c93e4e-d224-40b1-9062-44cbbff9a4b6)
+2026-04-27 14:36:28,099 - INFO - Connected to a new endpoint...
+2026-04-27 14:36:28,108 - INFO - Stopped receiving messages from a connection (session id: 0db02e24-2ff1-4654-a024-1a50b6ac44ec)
+2026-04-27 14:36:28,222 - INFO - Starting to receive messages from a new connection (session id: b5c93e4e-d224-40b1-9062-44cbbff9a4b6)
+2026-04-27 14:36:28,224 - INFO - Connecting to a new endpoint...
+2026-04-27 14:36:31,572 - ERROR - Failed to establish a connection (session id: c7137051-3b38-4219-897e-183a19515509, error: The read operation timed out)
+2026-04-27 14:36:31,573 - ERROR - on_error invoked (session id: b5c93e4e-d224-40b1-9062-44cbbff9a4b6, error: TimeoutError, message: The read operation timed out)
+2026-04-27 14:36:31,573 - INFO - The connection has been closed (session id: c7137051-3b38-4219-897e-183a19515509)
+2026-04-27 14:36:34,251 - INFO - The connection has been closed (session id: b5c93e4e-d224-40b1-9062-44cbbff9a4b6)
+2026-04-27 14:36:34,252 - INFO - The session seems to be already closed. Reconnecting... (session id: b5c93e4e-d224-40b1-9062-44cbbff9a4b6)
+2026-04-27 14:36:34,252 - INFO - A new session has been established (session id: c7137051-3b38-4219-897e-183a19515509)
+2026-04-27 14:36:34,253 - INFO - Connected to a new endpoint...
+2026-04-27 14:36:34,253 - INFO - Connecting to a new endpoint...
+2026-04-27 14:36:34,262 - INFO - Stopped receiving messages from a connection (session id: b5c93e4e-d224-40b1-9062-44cbbff9a4b6)
+2026-04-27 14:36:34,796 - INFO - The connection has been closed (session id: c7137051-3b38-4219-897e-183a19515509)
+2026-04-27 14:36:34,797 - INFO - A new session has been established (session id: c8e3f7b0-5f7f-4a23-bf9c-c166ca82d5fe)
+2026-04-27 14:36:34,797 - INFO - Connected to a new endpoint...
+2026-04-27 14:36:34,855 - INFO - Starting to receive messages from a new connection (session id: c8e3f7b0-5f7f-4a23-bf9c-c166ca82d5fe)
+2026-04-27 14:36:34,856 - INFO - Connecting to a new endpoint...
+2026-04-27 14:36:37,869 - INFO - The connection has been closed (session id: c8e3f7b0-5f7f-4a23-bf9c-c166ca82d5fe)
+2026-04-27 14:36:37,870 - INFO - A new session has been established (session id: bae38376-c1c0-46f1-bfe0-59296bbe9db7)
+2026-04-27 14:36:37,870 - INFO - Connected to a new endpoint...
+2026-04-27 14:36:37,881 - INFO - Stopped receiving messages from a connection (session id: c8e3f7b0-5f7f-4a23-bf9c-c166ca82d5fe)
+2026-04-27 14:36:37,993 - INFO - Starting to receive messages from a new connection (session id: bae38376-c1c0-46f1-bfe0-59296bbe9db7)
+2026-04-27 14:36:37,994 - INFO - Connecting to a new endpoint...
+2026-04-27 14:36:41,002 - INFO - The connection has been closed (session id: bae38376-c1c0-46f1-bfe0-59296bbe9db7)
+2026-04-27 14:36:41,003 - INFO - A new session has been established (session id: 09d1df72-266a-4a8c-a0d3-c278a02eb415)
+2026-04-27 14:36:41,003 - INFO - Connected to a new endpoint...
+2026-04-27 14:36:41,014 - INFO - Stopped receiving messages from a connection (session id: bae38376-c1c0-46f1-bfe0-59296bbe9db7)
+2026-04-27 14:36:41,128 - INFO - Starting to receive messages from a new connection (session id: 09d1df72-266a-4a8c-a0d3-c278a02eb415)
+2026-04-27 14:36:41,129 - INFO - Connecting to a new endpoint...
+2026-04-27 14:36:47,154 - INFO - The connection has been closed (session id: 09d1df72-266a-4a8c-a0d3-c278a02eb415)
+2026-04-27 14:36:47,155 - INFO - A new session has been established (session id: 80f24e64-f68d-4a62-a7af-30c5f9be8163)
+2026-04-27 14:36:47,155 - INFO - Connected to a new endpoint...
+2026-04-27 14:36:47,166 - INFO - Stopped receiving messages from a connection (session id: 09d1df72-266a-4a8c-a0d3-c278a02eb415)
+2026-04-27 14:36:47,277 - INFO - Starting to receive messages from a new connection (session id: 80f24e64-f68d-4a62-a7af-30c5f9be8163)
+2026-04-27 14:48:11,964 - INFO - Bot token loaded: xoxb-10940...
+2026-04-27 14:48:11,970 - INFO - App token loaded: xapp-1-A0A...
+2026-04-27 14:48:15,685 - INFO - GitHub scrape request called
+2026-04-27 14:48:15,704 - INFO - Socket handler created successfully
+2026-04-27 14:48:16,172 - INFO - A new session has been established (session id: 81efa1bf-a85e-4611-97b8-31bfe2b8758f)
+2026-04-27 14:48:16,172 - INFO - Bolt app is running!
+2026-04-27 14:48:16,262 - INFO - Starting to receive messages from a new connection (session id: 81efa1bf-a85e-4611-97b8-31bfe2b8758f)
+2026-04-27 14:48:16,262 - INFO - Connecting to a new endpoint...
+2026-04-27 14:48:19,271 - INFO - The connection has been closed (session id: 81efa1bf-a85e-4611-97b8-31bfe2b8758f)
+2026-04-27 14:48:19,271 - INFO - A new session has been established (session id: d608aab9-71c0-4172-bd29-8cb8295253f0)
+2026-04-27 14:48:19,271 - INFO - Connected to a new endpoint...
+2026-04-27 14:48:19,281 - INFO - Stopped receiving messages from a connection (session id: 81efa1bf-a85e-4611-97b8-31bfe2b8758f)
+2026-04-27 14:48:19,394 - INFO - Starting to receive messages from a new connection (session id: d608aab9-71c0-4172-bd29-8cb8295253f0)
+2026-04-27 14:48:19,395 - INFO - Connecting to a new endpoint...
+2026-04-27 14:48:22,409 - INFO - The connection has been closed (session id: d608aab9-71c0-4172-bd29-8cb8295253f0)
+2026-04-27 14:48:22,409 - INFO - A new session has been established (session id: 28839fa3-10b7-422c-a8eb-56df3efab95f)
+2026-04-27 14:48:22,409 - INFO - Connected to a new endpoint...
+2026-04-27 14:48:22,420 - INFO - Stopped receiving messages from a connection (session id: d608aab9-71c0-4172-bd29-8cb8295253f0)
+2026-04-27 14:48:22,525 - INFO - Starting to receive messages from a new connection (session id: 28839fa3-10b7-422c-a8eb-56df3efab95f)
+2026-04-27 14:48:22,525 - INFO - Connecting to a new endpoint...
+2026-04-27 14:48:25,540 - INFO - The connection has been closed (session id: 28839fa3-10b7-422c-a8eb-56df3efab95f)
+2026-04-27 14:48:25,540 - INFO - A new session has been established (session id: 6664a332-c148-4982-90ff-edcfcc2c5f0a)
+2026-04-27 14:48:25,540 - INFO - Connected to a new endpoint...
+2026-04-27 14:48:25,550 - INFO - Stopped receiving messages from a connection (session id: 28839fa3-10b7-422c-a8eb-56df3efab95f)
+2026-04-27 14:48:25,655 - INFO - Starting to receive messages from a new connection (session id: 6664a332-c148-4982-90ff-edcfcc2c5f0a)
+2026-04-27 14:48:25,655 - INFO - Connecting to a new endpoint...
+2026-04-27 14:48:28,669 - INFO - The connection has been closed (session id: 6664a332-c148-4982-90ff-edcfcc2c5f0a)
+2026-04-27 14:48:28,670 - INFO - A new session has been established (session id: 00912cb1-9767-4735-b834-175158c573b5)
+2026-04-27 14:48:28,670 - INFO - Connected to a new endpoint...
+2026-04-27 14:48:28,680 - INFO - Stopped receiving messages from a connection (session id: 6664a332-c148-4982-90ff-edcfcc2c5f0a)
+2026-04-27 14:48:28,794 - INFO - Starting to receive messages from a new connection (session id: 00912cb1-9767-4735-b834-175158c573b5)
+2026-04-27 14:48:28,794 - INFO - Connecting to a new endpoint...
+2026-04-27 14:48:31,794 - INFO - The connection has been closed (session id: 00912cb1-9767-4735-b834-175158c573b5)
+2026-04-27 14:48:31,796 - INFO - A new session has been established (session id: 0402d2ab-75a8-486d-92c6-0b241ace6566)
+2026-04-27 14:48:31,796 - INFO - Connected to a new endpoint...
+2026-04-27 14:48:31,805 - INFO - Stopped receiving messages from a connection (session id: 00912cb1-9767-4735-b834-175158c573b5)
+2026-04-27 14:48:31,918 - INFO - Starting to receive messages from a new connection (session id: 0402d2ab-75a8-486d-92c6-0b241ace6566)
+2026-04-27 15:11:16,454 - INFO - Bot token loaded: xoxb-10940...
+2026-04-27 15:11:16,457 - INFO - App token loaded: xapp-1-A0A...
+2026-04-27 15:11:20,152 - INFO - GitHub scrape request called
+2026-04-27 15:11:20,176 - INFO - Socket handler created successfully
+2026-04-27 15:11:20,639 - INFO - A new session has been established (session id: 3fc03305-97ea-4fbd-bc07-f66537f99668)
+2026-04-27 15:11:20,639 - INFO - Bolt app is running!
+2026-04-27 15:11:20,730 - INFO - Starting to receive messages from a new connection (session id: 3fc03305-97ea-4fbd-bc07-f66537f99668)
+2026-04-27 15:11:20,730 - INFO - Connecting to a new endpoint...
+2026-04-27 15:11:23,734 - INFO - The connection has been closed (session id: 3fc03305-97ea-4fbd-bc07-f66537f99668)
+2026-04-27 15:11:23,734 - INFO - A new session has been established (session id: 222a515e-2bd9-4731-90c6-f7bcb7b72e40)
+2026-04-27 15:11:23,734 - INFO - Connected to a new endpoint...
+2026-04-27 15:11:23,745 - INFO - Stopped receiving messages from a connection (session id: 3fc03305-97ea-4fbd-bc07-f66537f99668)
+2026-04-27 15:11:23,859 - INFO - Starting to receive messages from a new connection (session id: 222a515e-2bd9-4731-90c6-f7bcb7b72e40)
+2026-04-27 15:11:23,859 - INFO - Connecting to a new endpoint...
+2026-04-27 15:11:26,864 - INFO - The connection has been closed (session id: 222a515e-2bd9-4731-90c6-f7bcb7b72e40)
+2026-04-27 15:11:26,864 - INFO - A new session has been established (session id: c57df2c7-c26d-4f1b-88e8-09a500077767)
+2026-04-27 15:11:26,864 - INFO - Connected to a new endpoint...
+2026-04-27 15:11:26,874 - INFO - Stopped receiving messages from a connection (session id: 222a515e-2bd9-4731-90c6-f7bcb7b72e40)
+2026-04-27 15:11:26,980 - INFO - Starting to receive messages from a new connection (session id: c57df2c7-c26d-4f1b-88e8-09a500077767)
+2026-04-27 15:11:26,980 - INFO - Connecting to a new endpoint...
+2026-04-27 15:11:29,988 - INFO - The connection has been closed (session id: c57df2c7-c26d-4f1b-88e8-09a500077767)
+2026-04-27 15:11:29,989 - INFO - A new session has been established (session id: 68c6fcf4-074c-49d3-a78d-5af217047164)
+2026-04-27 15:11:29,989 - INFO - Connected to a new endpoint...
+2026-04-27 15:11:29,998 - INFO - Stopped receiving messages from a connection (session id: c57df2c7-c26d-4f1b-88e8-09a500077767)
+2026-04-27 15:11:30,103 - INFO - Starting to receive messages from a new connection (session id: 68c6fcf4-074c-49d3-a78d-5af217047164)
+2026-04-27 15:11:30,103 - INFO - Connecting to a new endpoint...
+2026-04-27 15:11:33,104 - INFO - The connection has been closed (session id: 68c6fcf4-074c-49d3-a78d-5af217047164)
+2026-04-27 15:11:33,104 - INFO - The session seems to be already closed. Reconnecting... (session id: 68c6fcf4-074c-49d3-a78d-5af217047164)
+2026-04-27 15:11:33,104 - INFO - A new session has been established (session id: 61949de1-dbab-4b1f-abc5-c8c9971a5a9d)
+2026-04-27 15:11:33,105 - INFO - Connected to a new endpoint...
+2026-04-27 15:11:33,114 - INFO - Stopped receiving messages from a connection (session id: 68c6fcf4-074c-49d3-a78d-5af217047164)
+2026-04-27 15:11:33,220 - INFO - Starting to receive messages from a new connection (session id: 61949de1-dbab-4b1f-abc5-c8c9971a5a9d)
+2026-04-27 15:11:33,220 - INFO - Connecting to a new endpoint...
+2026-04-27 15:11:36,232 - INFO - The connection has been closed (session id: 61949de1-dbab-4b1f-abc5-c8c9971a5a9d)
+2026-04-27 15:11:36,232 - INFO - A new session has been established (session id: 0142d567-68ba-4e00-bf8d-0351fd064c71)
+2026-04-27 15:11:36,234 - INFO - Connected to a new endpoint...
+2026-04-27 15:11:36,243 - INFO - Stopped receiving messages from a connection (session id: 61949de1-dbab-4b1f-abc5-c8c9971a5a9d)
+2026-04-27 15:11:36,350 - INFO - Starting to receive messages from a new connection (session id: 0142d567-68ba-4e00-bf8d-0351fd064c71)
+2026-04-27 15:33:10,959 - INFO - Bot token loaded: xoxb-10940...
+2026-04-27 15:33:11,028 - INFO - App token loaded: xapp-1-A0A...
+2026-04-27 15:33:17,918 - INFO - GitHub scrape request called
+2026-04-27 15:33:17,932 - INFO - Socket handler created successfully
+2026-04-27 15:33:18,419 - INFO - A new session has been established (session id: 6db782ed-9073-4737-bb0b-4d16cbfeba1e)
+2026-04-27 15:33:18,419 - INFO - Bolt app is running!
+2026-04-27 15:33:18,477 - INFO - Starting to receive messages from a new connection (session id: 6db782ed-9073-4737-bb0b-4d16cbfeba1e)
+2026-04-27 15:44:09,178 - INFO - Bot token loaded: xoxb-10940...
+2026-04-27 15:44:09,188 - INFO - App token loaded: xapp-1-A0A...
+2026-04-27 15:44:13,548 - INFO - GitHub scrape request called
+2026-04-27 15:44:13,877 - INFO - Socket handler created successfully
+2026-04-27 15:44:14,382 - INFO - A new session has been established (session id: 2135c4a7-4f94-4323-a1c0-6715356db526)
+2026-04-27 15:44:14,382 - INFO - Bolt app is running!
+2026-04-27 15:44:14,421 - INFO - Starting to receive messages from a new connection (session id: 2135c4a7-4f94-4323-a1c0-6715356db526)
+2026-04-27 15:56:43,374 - INFO - Bot token loaded: xoxb-10940...
+2026-04-27 15:56:43,374 - INFO - App token loaded: xapp-1-A0A...
+2026-04-27 15:56:48,235 - INFO - GitHub scrape request called
+2026-04-27 15:56:48,550 - INFO - Socket handler created successfully
+2026-04-27 15:56:49,051 - INFO - A new session has been established (session id: d5eee2b9-c578-451f-9482-5379d16a6987)
+2026-04-27 15:56:49,051 - INFO - Bolt app is running!
+2026-04-27 15:56:49,089 - INFO - Starting to receive messages from a new connection (session id: d5eee2b9-c578-451f-9482-5379d16a6987)
+2026-04-27 15:57:20,815 - INFO - Bot token loaded: xoxb-10940...
+2026-04-27 15:57:20,822 - INFO - App token loaded: xapp-1-A0A...
+2026-04-27 15:57:27,020 - INFO - GitHub scrape request called
+2026-04-27 15:57:27,386 - INFO - Socket handler created successfully
+2026-04-27 15:57:28,007 - INFO - A new session has been established (session id: e318ac6b-f238-4135-8299-67a6a024eaf2)
+2026-04-27 15:57:28,008 - INFO - Bolt app is running!
+2026-04-27 15:57:28,065 - INFO - Starting to receive messages from a new connection (session id: e318ac6b-f238-4135-8299-67a6a024eaf2)
+2026-04-27 15:58:29,442 - INFO - Bot token loaded: xoxb-10940...
+2026-04-27 15:58:29,442 - INFO - App token loaded: xapp-1-A0A...
+2026-04-27 15:58:33,311 - INFO - GitHub scrape request called
+2026-04-27 15:58:33,660 - INFO - Socket handler created successfully
+2026-04-27 15:58:34,162 - INFO - A new session has been established (session id: 25dcc982-0350-43db-b180-7044b5764193)
+2026-04-27 15:58:34,162 - INFO - Bolt app is running!
+2026-04-27 15:58:34,226 - INFO - Starting to receive messages from a new connection (session id: 25dcc982-0350-43db-b180-7044b5764193)
+2026-04-27 16:36:59,568 - ERROR - Failed to check the state of sock (session id: 25dcc982-0350-43db-b180-7044b5764193, error: SSLEOFError, message: EOF occurred in violation of protocol (_ssl.c:2406))
+2026-04-27 16:37:11,543 - ERROR - Failed to check the state of sock (session id: 25dcc982-0350-43db-b180-7044b5764193, error: SSLEOFError, message: EOF occurred in violation of protocol (_ssl.c:2406))
+2026-04-27 16:37:21,623 - ERROR - Failed to check the state of sock (session id: 25dcc982-0350-43db-b180-7044b5764193, error: SSLEOFError, message: EOF occurred in violation of protocol (_ssl.c:2406))
+2026-04-27 16:37:31,680 - ERROR - Failed to check the state of sock (session id: 25dcc982-0350-43db-b180-7044b5764193, error: SSLError, message: [SSL: BAD_LENGTH] bad length (_ssl.c:2406))
+2026-04-27 16:37:41,696 - ERROR - Failed to check the state of sock (session id: 25dcc982-0350-43db-b180-7044b5764193, error: SSLEOFError, message: EOF occurred in violation of protocol (_ssl.c:2406))
+2026-04-27 16:37:42,048 - INFO - The connection has been closed (session id: 25dcc982-0350-43db-b180-7044b5764193)
+2026-04-27 16:37:42,097 - INFO - The session seems to be already closed. Reconnecting... (session id: 25dcc982-0350-43db-b180-7044b5764193)
+2026-04-27 16:37:42,385 - INFO - Connecting to a new endpoint...
+2026-04-27 16:37:54,737 - ERROR - Failed to send a request to Slack API server: <urlopen error [Errno 11001] getaddrinfo failed>
+2026-04-27 16:37:56,250 - INFO - Going to retry the same request: POST https://slack.com/api/apps.connections.open
+2026-04-27 16:38:08,292 - ERROR - Failed to send a request to Slack API server: <urlopen error [Errno 11001] getaddrinfo failed>
+2026-04-27 16:38:08,296 - ERROR - Failed to check the current session or reconnect to the server (session id: 25dcc982-0350-43db-b180-7044b5764193, error: URLError, message: <urlopen error [Errno 11001] getaddrinfo failed>)
+2026-04-27 16:38:18,306 - INFO - The session seems to be already closed. Reconnecting... (session id: 25dcc982-0350-43db-b180-7044b5764193)
+2026-04-27 16:38:18,310 - INFO - Connecting to a new endpoint...
+2026-04-27 16:38:18,334 - ERROR - Failed to send a request to Slack API server: <urlopen error [Errno 11001] getaddrinfo failed>
+2026-04-27 16:38:19,147 - INFO - Going to retry the same request: POST https://slack.com/api/apps.connections.open
+2026-04-27 16:38:31,479 - ERROR - Failed to send a request to Slack API server: <urlopen error [Errno 11001] getaddrinfo failed>
+2026-04-27 16:38:31,480 - ERROR - Failed to check the current session or reconnect to the server (session id: 25dcc982-0350-43db-b180-7044b5764193, error: URLError, message: <urlopen error [Errno 11001] getaddrinfo failed>)
+2026-04-27 16:38:41,490 - INFO - The session seems to be already closed. Reconnecting... (session id: 25dcc982-0350-43db-b180-7044b5764193)
+2026-04-27 16:38:41,492 - INFO - Connecting to a new endpoint...
+2026-04-27 16:38:41,518 - ERROR - Failed to send a request to Slack API server: <urlopen error [Errno 11001] getaddrinfo failed>
+2026-04-27 16:38:42,270 - INFO - Going to retry the same request: POST https://slack.com/api/apps.connections.open
+2026-04-27 16:38:42,358 - ERROR - Failed to send a request to Slack API server: <urlopen error [Errno 11001] getaddrinfo failed>
+2026-04-27 16:38:42,359 - ERROR - Failed to check the current session or reconnect to the server (session id: 25dcc982-0350-43db-b180-7044b5764193, error: URLError, message: <urlopen error [Errno 11001] getaddrinfo failed>)
+2026-04-27 16:38:52,371 - INFO - The session seems to be already closed. Reconnecting... (session id: 25dcc982-0350-43db-b180-7044b5764193)
+2026-04-27 16:38:52,375 - INFO - Connecting to a new endpoint...
+2026-04-27 16:38:52,379 - ERROR - Failed to send a request to Slack API server: <urlopen error [Errno 11001] getaddrinfo failed>
+2026-04-27 16:38:53,677 - INFO - Going to retry the same request: POST https://slack.com/api/apps.connections.open
+2026-04-27 16:38:53,682 - ERROR - Failed to send a request to Slack API server: <urlopen error [Errno 11001] getaddrinfo failed>
+2026-04-27 16:38:53,683 - ERROR - Failed to check the current session or reconnect to the server (session id: 25dcc982-0350-43db-b180-7044b5764193, error: URLError, message: <urlopen error [Errno 11001] getaddrinfo failed>)
+2026-04-27 16:39:03,695 - INFO - The session seems to be already closed. Reconnecting... (session id: 25dcc982-0350-43db-b180-7044b5764193)
+2026-04-27 16:39:03,697 - INFO - Connecting to a new endpoint...
+2026-04-27 16:39:03,700 - ERROR - Failed to send a request to Slack API server: <urlopen error [Errno 11001] getaddrinfo failed>
+2026-04-27 16:39:04,642 - INFO - Going to retry the same request: POST https://slack.com/api/apps.connections.open
+2026-04-27 16:39:04,645 - ERROR - Failed to send a request to Slack API server: <urlopen error [Errno 11001] getaddrinfo failed>
+2026-04-27 16:39:04,645 - ERROR - Failed to check the current session or reconnect to the server (session id: 25dcc982-0350-43db-b180-7044b5764193, error: URLError, message: <urlopen error [Errno 11001] getaddrinfo failed>)
+2026-04-27 16:39:14,653 - INFO - The session seems to be already closed. Reconnecting... (session id: 25dcc982-0350-43db-b180-7044b5764193)
+2026-04-27 16:39:14,656 - INFO - Connecting to a new endpoint...
+2026-04-27 16:39:14,659 - ERROR - Failed to send a request to Slack API server: <urlopen error [Errno 11001] getaddrinfo failed>
+2026-04-27 16:39:15,388 - INFO - Going to retry the same request: POST https://slack.com/api/apps.connections.open
+2026-04-27 16:39:15,391 - ERROR - Failed to send a request to Slack API server: <urlopen error [Errno 11001] getaddrinfo failed>
+2026-04-27 16:39:15,392 - ERROR - Failed to check the current session or reconnect to the server (session id: 25dcc982-0350-43db-b180-7044b5764193, error: URLError, message: <urlopen error [Errno 11001] getaddrinfo failed>)
+2026-04-27 16:39:25,405 - INFO - The session seems to be already closed. Reconnecting... (session id: 25dcc982-0350-43db-b180-7044b5764193)
+2026-04-27 16:39:25,406 - INFO - Connecting to a new endpoint...
+2026-04-27 16:39:25,410 - ERROR - Failed to send a request to Slack API server: <urlopen error [Errno 11001] getaddrinfo failed>
+2026-04-27 16:39:26,843 - INFO - Going to retry the same request: POST https://slack.com/api/apps.connections.open
+2026-04-27 16:39:26,845 - ERROR - Failed to send a request to Slack API server: <urlopen error [Errno 11001] getaddrinfo failed>
+2026-04-27 16:39:26,846 - ERROR - Failed to check the current session or reconnect to the server (session id: 25dcc982-0350-43db-b180-7044b5764193, error: URLError, message: <urlopen error [Errno 11001] getaddrinfo failed>)
+2026-04-27 16:39:36,858 - INFO - The session seems to be already closed. Reconnecting... (session id: 25dcc982-0350-43db-b180-7044b5764193)
+2026-04-27 16:39:36,859 - INFO - Connecting to a new endpoint...
+2026-04-27 16:39:36,863 - ERROR - Failed to send a request to Slack API server: <urlopen error [Errno 11001] getaddrinfo failed>
+2026-04-27 16:39:38,148 - INFO - Going to retry the same request: POST https://slack.com/api/apps.connections.open
+2026-04-27 16:39:38,150 - ERROR - Failed to send a request to Slack API server: <urlopen error [Errno 11001] getaddrinfo failed>
+2026-04-27 16:39:38,151 - ERROR - Failed to check the current session or reconnect to the server (session id: 25dcc982-0350-43db-b180-7044b5764193, error: URLError, message: <urlopen error [Errno 11001] getaddrinfo failed>)
+2026-04-27 16:39:48,154 - INFO - The session seems to be already closed. Reconnecting... (session id: 25dcc982-0350-43db-b180-7044b5764193)
+2026-04-27 16:39:48,156 - INFO - Connecting to a new endpoint...
+2026-04-27 16:39:48,158 - ERROR - Failed to send a request to Slack API server: <urlopen error [Errno 11001] getaddrinfo failed>
+2026-04-27 16:39:49,460 - INFO - Going to retry the same request: POST https://slack.com/api/apps.connections.open
+2026-04-27 16:39:49,462 - ERROR - Failed to send a request to Slack API server: <urlopen error [Errno 11001] getaddrinfo failed>
+2026-04-27 16:39:49,463 - ERROR - Failed to check the current session or reconnect to the server (session id: 25dcc982-0350-43db-b180-7044b5764193, error: URLError, message: <urlopen error [Errno 11001] getaddrinfo failed>)
+2026-04-27 16:39:59,472 - INFO - The session seems to be already closed. Reconnecting... (session id: 25dcc982-0350-43db-b180-7044b5764193)
+2026-04-27 16:39:59,475 - INFO - Connecting to a new endpoint...
+2026-04-27 16:40:09,721 - ERROR - Failed to send a request to Slack API server: <urlopen error [Errno 11001] getaddrinfo failed>
+2026-04-27 16:40:10,322 - INFO - Going to retry the same request: POST https://slack.com/api/apps.connections.open
+2026-04-27 16:40:22,396 - ERROR - Failed to send a request to Slack API server: <urlopen error [Errno 11001] getaddrinfo failed>
+2026-04-27 16:40:22,397 - ERROR - Failed to check the current session or reconnect to the server (session id: 25dcc982-0350-43db-b180-7044b5764193, error: URLError, message: <urlopen error [Errno 11001] getaddrinfo failed>)
+2026-04-27 16:40:32,404 - INFO - The session seems to be already closed. Reconnecting... (session id: 25dcc982-0350-43db-b180-7044b5764193)
+2026-04-27 16:40:32,406 - INFO - Connecting to a new endpoint...
+2026-04-27 16:40:44,498 - ERROR - Failed to send a request to Slack API server: <urlopen error [Errno 11001] getaddrinfo failed>
+2026-04-27 16:40:45,759 - INFO - Going to retry the same request: POST https://slack.com/api/apps.connections.open
+2026-04-27 16:40:45,804 - ERROR - Failed to send a request to Slack API server: <urlopen error [Errno 11001] getaddrinfo failed>
+2026-04-27 16:40:45,805 - ERROR - Failed to check the current session or reconnect to the server (session id: 25dcc982-0350-43db-b180-7044b5764193, error: URLError, message: <urlopen error [Errno 11001] getaddrinfo failed>)
+2026-04-27 16:40:55,824 - INFO - The session seems to be already closed. Reconnecting... (session id: 25dcc982-0350-43db-b180-7044b5764193)
+2026-04-27 16:40:55,826 - INFO - Connecting to a new endpoint...
+2026-04-27 16:41:07,941 - ERROR - Failed to send a request to Slack API server: <urlopen error [Errno 11001] getaddrinfo failed>
+2026-04-27 16:41:08,450 - INFO - Going to retry the same request: POST https://slack.com/api/apps.connections.open
+2026-04-27 16:41:08,458 - ERROR - Failed to send a request to Slack API server: <urlopen error [Errno 11001] getaddrinfo failed>
+2026-04-27 16:41:08,459 - ERROR - Failed to check the current session or reconnect to the server (session id: 25dcc982-0350-43db-b180-7044b5764193, error: URLError, message: <urlopen error [Errno 11001] getaddrinfo failed>)
+2026-04-27 16:41:18,505 - INFO - The session seems to be already closed. Reconnecting... (session id: 25dcc982-0350-43db-b180-7044b5764193)
+2026-04-27 16:41:18,556 - INFO - Connecting to a new endpoint...
+2026-04-27 16:41:18,740 - ERROR - Failed to send a request to Slack API server: <urlopen error [Errno 11001] getaddrinfo failed>
+2026-04-27 16:41:19,988 - INFO - Going to retry the same request: POST https://slack.com/api/apps.connections.open
+2026-04-27 16:41:19,994 - ERROR - Failed to send a request to Slack API server: <urlopen error [Errno 11001] getaddrinfo failed>
+2026-04-27 16:41:19,995 - ERROR - Failed to check the current session or reconnect to the server (session id: 25dcc982-0350-43db-b180-7044b5764193, error: URLError, message: <urlopen error [Errno 11001] getaddrinfo failed>)
+2026-04-27 16:41:30,001 - INFO - The session seems to be already closed. Reconnecting... (session id: 25dcc982-0350-43db-b180-7044b5764193)
+2026-04-27 16:41:30,010 - INFO - Connecting to a new endpoint...
+2026-04-27 16:41:30,069 - ERROR - Failed to send a request to Slack API server: <urlopen error [Errno 11001] getaddrinfo failed>
+2026-04-27 16:41:31,251 - INFO - Going to retry the same request: POST https://slack.com/api/apps.connections.open
+2026-04-27 16:41:43,525 - ERROR - Failed to send a request to Slack API server: <urlopen error [Errno 11001] getaddrinfo failed>
+2026-04-27 16:41:43,531 - ERROR - Failed to check the current session or reconnect to the server (session id: 25dcc982-0350-43db-b180-7044b5764193, error: URLError, message: <urlopen error [Errno 11001] getaddrinfo failed>)
+2026-04-27 16:41:53,543 - INFO - The session seems to be already closed. Reconnecting... (session id: 25dcc982-0350-43db-b180-7044b5764193)
+2026-04-27 16:41:53,546 - INFO - Connecting to a new endpoint...
+2026-04-27 16:41:53,591 - ERROR - Failed to send a request to Slack API server: <urlopen error [Errno 11001] getaddrinfo failed>
+2026-04-27 16:41:54,138 - INFO - Going to retry the same request: POST https://slack.com/api/apps.connections.open
+2026-04-27 16:41:54,148 - ERROR - Failed to send a request to Slack API server: <urlopen error [Errno 11001] getaddrinfo failed>
+2026-04-27 16:41:54,149 - ERROR - Failed to check the current session or reconnect to the server (session id: 25dcc982-0350-43db-b180-7044b5764193, error: URLError, message: <urlopen error [Errno 11001] getaddrinfo failed>)
+2026-04-27 16:42:04,161 - INFO - The session seems to be already closed. Reconnecting... (session id: 25dcc982-0350-43db-b180-7044b5764193)
+2026-04-27 16:42:04,162 - INFO - Connecting to a new endpoint...
+2026-04-27 16:42:16,210 - ERROR - Failed to send a request to Slack API server: <urlopen error [Errno 11001] getaddrinfo failed>
+2026-04-27 16:42:17,166 - INFO - Going to retry the same request: POST https://slack.com/api/apps.connections.open
+2026-04-27 16:42:17,172 - ERROR - Failed to send a request to Slack API server: <urlopen error [Errno 11001] getaddrinfo failed>
+2026-04-27 16:42:17,173 - ERROR - Failed to check the current session or reconnect to the server (session id: 25dcc982-0350-43db-b180-7044b5764193, error: URLError, message: <urlopen error [Errno 11001] getaddrinfo failed>)
+2026-04-27 16:42:27,184 - INFO - The session seems to be already closed. Reconnecting... (session id: 25dcc982-0350-43db-b180-7044b5764193)
+2026-04-27 16:42:27,187 - INFO - Connecting to a new endpoint...
+2026-04-27 16:42:39,265 - ERROR - Failed to send a request to Slack API server: <urlopen error [Errno 11001] getaddrinfo failed>
+2026-04-27 16:42:39,820 - INFO - Going to retry the same request: POST https://slack.com/api/apps.connections.open
+2026-04-27 16:42:39,824 - ERROR - Failed to send a request to Slack API server: <urlopen error [Errno 11001] getaddrinfo failed>
+2026-04-27 16:42:39,826 - ERROR - Failed to check the current session or reconnect to the server (session id: 25dcc982-0350-43db-b180-7044b5764193, error: URLError, message: <urlopen error [Errno 11001] getaddrinfo failed>)
+2026-04-27 16:42:49,845 - INFO - The session seems to be already closed. Reconnecting... (session id: 25dcc982-0350-43db-b180-7044b5764193)
+2026-04-27 16:42:49,873 - INFO - Connecting to a new endpoint...
+2026-04-27 16:42:49,943 - ERROR - Failed to send a request to Slack API server: <urlopen error [Errno 11001] getaddrinfo failed>
+2026-04-27 16:42:51,154 - INFO - Going to retry the same request: POST https://slack.com/api/apps.connections.open
+2026-04-27 16:42:51,163 - ERROR - Failed to send a request to Slack API server: <urlopen error [Errno 11001] getaddrinfo failed>
+2026-04-27 16:42:51,167 - ERROR - Failed to check the current session or reconnect to the server (session id: 25dcc982-0350-43db-b180-7044b5764193, error: URLError, message: <urlopen error [Errno 11001] getaddrinfo failed>)
+2026-04-27 16:43:01,173 - INFO - The session seems to be already closed. Reconnecting... (session id: 25dcc982-0350-43db-b180-7044b5764193)
+2026-04-27 16:43:01,173 - INFO - Connecting to a new endpoint...
+2026-04-27 16:43:01,181 - ERROR - Failed to send a request to Slack API server: <urlopen error [Errno 11001] getaddrinfo failed>
+2026-04-27 16:43:02,572 - INFO - Going to retry the same request: POST https://slack.com/api/apps.connections.open
+2026-04-27 16:43:02,585 - ERROR - Failed to send a request to Slack API server: <urlopen error [Errno 11001] getaddrinfo failed>
+2026-04-27 16:43:02,587 - ERROR - Failed to check the current session or reconnect to the server (session id: 25dcc982-0350-43db-b180-7044b5764193, error: URLError, message: <urlopen error [Errno 11001] getaddrinfo failed>)
+2026-04-27 16:43:12,592 - INFO - The session seems to be already closed. Reconnecting... (session id: 25dcc982-0350-43db-b180-7044b5764193)
+2026-04-27 16:43:12,592 - INFO - Connecting to a new endpoint...
+2026-04-27 16:43:24,624 - ERROR - Failed to send a request to Slack API server: <urlopen error [Errno 11001] getaddrinfo failed>
+2026-04-27 16:43:25,461 - INFO - Going to retry the same request: POST https://slack.com/api/apps.connections.open
+2026-04-27 16:43:37,516 - ERROR - Failed to send a request to Slack API server: <urlopen error [Errno 11001] getaddrinfo failed>
+2026-04-27 16:43:37,516 - ERROR - Failed to check the current session or reconnect to the server (session id: 25dcc982-0350-43db-b180-7044b5764193, error: URLError, message: <urlopen error [Errno 11001] getaddrinfo failed>)
+2026-04-27 16:43:47,524 - INFO - The session seems to be already closed. Reconnecting... (session id: 25dcc982-0350-43db-b180-7044b5764193)
+2026-04-27 16:43:47,524 - INFO - Connecting to a new endpoint...
+2026-04-27 16:43:59,558 - ERROR - Failed to send a request to Slack API server: <urlopen error [Errno 11001] getaddrinfo failed>
+2026-04-27 16:44:00,601 - INFO - Going to retry the same request: POST https://slack.com/api/apps.connections.open
+2026-04-27 16:44:00,603 - ERROR - Failed to send a request to Slack API server: <urlopen error [Errno 11001] getaddrinfo failed>
+2026-04-27 16:44:00,605 - ERROR - Failed to check the current session or reconnect to the server (session id: 25dcc982-0350-43db-b180-7044b5764193, error: URLError, message: <urlopen error [Errno 11001] getaddrinfo failed>)
+2026-04-27 16:44:10,607 - INFO - The session seems to be already closed. Reconnecting... (session id: 25dcc982-0350-43db-b180-7044b5764193)
+2026-04-27 16:44:10,607 - INFO - Connecting to a new endpoint...
+2026-04-27 16:44:22,653 - ERROR - Failed to send a request to Slack API server: <urlopen error [Errno 11001] getaddrinfo failed>
+2026-04-27 16:44:23,380 - INFO - Going to retry the same request: POST https://slack.com/api/apps.connections.open
+2026-04-27 16:44:23,380 - ERROR - Failed to send a request to Slack API server: <urlopen error [Errno 11001] getaddrinfo failed>
+2026-04-27 16:44:23,380 - ERROR - Failed to check the current session or reconnect to the server (session id: 25dcc982-0350-43db-b180-7044b5764193, error: URLError, message: <urlopen error [Errno 11001] getaddrinfo failed>)
+2026-04-27 16:44:33,394 - INFO - The session seems to be already closed. Reconnecting... (session id: 25dcc982-0350-43db-b180-7044b5764193)
+2026-04-27 16:44:33,394 - INFO - Connecting to a new endpoint...
+2026-04-27 16:44:33,396 - ERROR - Failed to send a request to Slack API server: <urlopen error [Errno 11001] getaddrinfo failed>
+2026-04-27 16:44:33,934 - INFO - Going to retry the same request: POST https://slack.com/api/apps.connections.open
+2026-04-27 16:44:33,934 - ERROR - Failed to send a request to Slack API server: <urlopen error [Errno 11001] getaddrinfo failed>
+2026-04-27 16:44:33,938 - ERROR - Failed to check the current session or reconnect to the server (session id: 25dcc982-0350-43db-b180-7044b5764193, error: URLError, message: <urlopen error [Errno 11001] getaddrinfo failed>)
+2026-04-27 16:44:43,941 - INFO - The session seems to be already closed. Reconnecting... (session id: 25dcc982-0350-43db-b180-7044b5764193)
+2026-04-27 16:44:43,943 - INFO - Connecting to a new endpoint...
+2026-04-27 16:44:43,946 - ERROR - Failed to send a request to Slack API server: <urlopen error [Errno 11001] getaddrinfo failed>
+2026-04-27 16:44:45,184 - INFO - Going to retry the same request: POST https://slack.com/api/apps.connections.open
+2026-04-27 16:44:45,186 - ERROR - Failed to send a request to Slack API server: <urlopen error [Errno 11001] getaddrinfo failed>
+2026-04-27 16:44:45,186 - ERROR - Failed to check the current session or reconnect to the server (session id: 25dcc982-0350-43db-b180-7044b5764193, error: URLError, message: <urlopen error [Errno 11001] getaddrinfo failed>)
+2026-04-27 16:44:55,192 - INFO - The session seems to be already closed. Reconnecting... (session id: 25dcc982-0350-43db-b180-7044b5764193)
+2026-04-27 16:44:55,192 - INFO - Connecting to a new endpoint...
+2026-04-27 16:45:07,222 - ERROR - Failed to send a request to Slack API server: <urlopen error [Errno 11001] getaddrinfo failed>
+2026-04-27 16:45:07,839 - INFO - Going to retry the same request: POST https://slack.com/api/apps.connections.open
+2026-04-27 16:45:07,841 - ERROR - Failed to send a request to Slack API server: <urlopen error [Errno 11001] getaddrinfo failed>
+2026-04-27 16:45:07,844 - ERROR - Failed to check the current session or reconnect to the server (session id: 25dcc982-0350-43db-b180-7044b5764193, error: URLError, message: <urlopen error [Errno 11001] getaddrinfo failed>)
+2026-04-27 16:45:17,859 - INFO - The session seems to be already closed. Reconnecting... (session id: 25dcc982-0350-43db-b180-7044b5764193)
+2026-04-27 16:45:17,864 - INFO - Connecting to a new endpoint...
+2026-04-27 16:45:17,869 - ERROR - Failed to send a request to Slack API server: <urlopen error [Errno 11001] getaddrinfo failed>
+2026-04-27 16:45:18,816 - INFO - Going to retry the same request: POST https://slack.com/api/apps.connections.open
+2026-04-27 16:45:18,818 - ERROR - Failed to send a request to Slack API server: <urlopen error [Errno 11001] getaddrinfo failed>
+2026-04-27 16:45:18,818 - ERROR - Failed to check the current session or reconnect to the server (session id: 25dcc982-0350-43db-b180-7044b5764193, error: URLError, message: <urlopen error [Errno 11001] getaddrinfo failed>)
+2026-04-27 16:45:28,828 - INFO - The session seems to be already closed. Reconnecting... (session id: 25dcc982-0350-43db-b180-7044b5764193)
+2026-04-27 16:45:28,828 - INFO - Connecting to a new endpoint...
+2026-04-27 16:45:40,874 - ERROR - Failed to send a request to Slack API server: <urlopen error [Errno 11001] getaddrinfo failed>
+2026-04-27 16:45:41,508 - INFO - Going to retry the same request: POST https://slack.com/api/apps.connections.open
+2026-04-27 16:45:41,508 - ERROR - Failed to send a request to Slack API server: <urlopen error [Errno 11001] getaddrinfo failed>
+2026-04-27 16:45:41,508 - ERROR - Failed to check the current session or reconnect to the server (session id: 25dcc982-0350-43db-b180-7044b5764193, error: URLError, message: <urlopen error [Errno 11001] getaddrinfo failed>)
+2026-04-27 16:45:51,520 - INFO - The session seems to be already closed. Reconnecting... (session id: 25dcc982-0350-43db-b180-7044b5764193)
+2026-04-27 16:45:51,544 - INFO - Connecting to a new endpoint...
+2026-04-27 16:45:51,564 - ERROR - Failed to send a request to Slack API server: <urlopen error [Errno 11001] getaddrinfo failed>
+2026-04-27 16:45:52,316 - INFO - Going to retry the same request: POST https://slack.com/api/apps.connections.open
+2026-04-27 16:45:52,346 - ERROR - Failed to send a request to Slack API server: <urlopen error [Errno 11001] getaddrinfo failed>
+2026-04-27 16:45:52,348 - ERROR - Failed to check the current session or reconnect to the server (session id: 25dcc982-0350-43db-b180-7044b5764193, error: URLError, message: <urlopen error [Errno 11001] getaddrinfo failed>)
+2026-04-27 16:46:02,358 - INFO - The session seems to be already closed. Reconnecting... (session id: 25dcc982-0350-43db-b180-7044b5764193)
+2026-04-27 16:46:02,358 - INFO - Connecting to a new endpoint...
+2026-04-27 16:46:02,363 - ERROR - Failed to send a request to Slack API server: <urlopen error [Errno 11001] getaddrinfo failed>
+2026-04-27 16:46:03,447 - INFO - Going to retry the same request: POST https://slack.com/api/apps.connections.open
+2026-04-27 16:46:03,450 - ERROR - Failed to send a request to Slack API server: <urlopen error [Errno 11001] getaddrinfo failed>
+2026-04-27 16:46:03,450 - ERROR - Failed to check the current session or reconnect to the server (session id: 25dcc982-0350-43db-b180-7044b5764193, error: URLError, message: <urlopen error [Errno 11001] getaddrinfo failed>)
+2026-04-27 16:46:13,465 - INFO - The session seems to be already closed. Reconnecting... (session id: 25dcc982-0350-43db-b180-7044b5764193)
+2026-04-27 16:46:13,465 - INFO - Connecting to a new endpoint...
+2026-04-27 16:46:13,467 - ERROR - Failed to send a request to Slack API server: <urlopen error [Errno 11001] getaddrinfo failed>
+2026-04-27 16:46:14,901 - INFO - Going to retry the same request: POST https://slack.com/api/apps.connections.open
+2026-04-27 16:46:26,953 - ERROR - Failed to send a request to Slack API server: <urlopen error [Errno 11001] getaddrinfo failed>
+2026-04-27 16:46:26,955 - ERROR - Failed to check the current session or reconnect to the server (session id: 25dcc982-0350-43db-b180-7044b5764193, error: URLError, message: <urlopen error [Errno 11001] getaddrinfo failed>)
+2026-04-27 16:46:36,959 - INFO - The session seems to be already closed. Reconnecting... (session id: 25dcc982-0350-43db-b180-7044b5764193)
+2026-04-27 16:46:36,959 - INFO - Connecting to a new endpoint...
+2026-04-27 16:46:48,994 - ERROR - Failed to send a request to Slack API server: <urlopen error [Errno 11001] getaddrinfo failed>
+2026-04-27 16:46:50,243 - INFO - Going to retry the same request: POST https://slack.com/api/apps.connections.open
+2026-04-27 16:46:50,245 - ERROR - Failed to send a request to Slack API server: <urlopen error [Errno 11001] getaddrinfo failed>
+2026-04-27 16:46:50,245 - ERROR - Failed to check the current session or reconnect to the server (session id: 25dcc982-0350-43db-b180-7044b5764193, error: URLError, message: <urlopen error [Errno 11001] getaddrinfo failed>)
+2026-04-27 16:47:00,255 - INFO - The session seems to be already closed. Reconnecting... (session id: 25dcc982-0350-43db-b180-7044b5764193)
+2026-04-27 16:47:00,255 - INFO - Connecting to a new endpoint...
+2026-04-27 16:47:00,258 - ERROR - Failed to send a request to Slack API server: <urlopen error [Errno 11001] getaddrinfo failed>
+2026-04-27 16:47:01,490 - INFO - Going to retry the same request: POST https://slack.com/api/apps.connections.open
+2026-04-27 16:47:01,492 - ERROR - Failed to send a request to Slack API server: <urlopen error [Errno 11001] getaddrinfo failed>
+2026-04-27 16:47:01,492 - ERROR - Failed to check the current session or reconnect to the server (session id: 25dcc982-0350-43db-b180-7044b5764193, error: URLError, message: <urlopen error [Errno 11001] getaddrinfo failed>)
+2026-04-27 16:47:11,496 - INFO - The session seems to be already closed. Reconnecting... (session id: 25dcc982-0350-43db-b180-7044b5764193)
+2026-04-27 16:47:11,500 - INFO - Connecting to a new endpoint...
+2026-04-27 16:47:23,540 - ERROR - Failed to send a request to Slack API server: <urlopen error [Errno 11001] getaddrinfo failed>
+2026-04-27 16:47:24,929 - INFO - Going to retry the same request: POST https://slack.com/api/apps.connections.open
+2026-04-27 16:47:24,931 - ERROR - Failed to send a request to Slack API server: <urlopen error [Errno 11001] getaddrinfo failed>
+2026-04-27 16:47:24,932 - ERROR - Failed to check the current session or reconnect to the server (session id: 25dcc982-0350-43db-b180-7044b5764193, error: URLError, message: <urlopen error [Errno 11001] getaddrinfo failed>)
+2026-04-27 16:47:34,946 - INFO - The session seems to be already closed. Reconnecting... (session id: 25dcc982-0350-43db-b180-7044b5764193)
+2026-04-27 16:47:34,946 - INFO - Connecting to a new endpoint...
+2026-04-27 16:47:46,982 - ERROR - Failed to send a request to Slack API server: <urlopen error [Errno 11001] getaddrinfo failed>
+2026-04-27 16:47:47,518 - INFO - Going to retry the same request: POST https://slack.com/api/apps.connections.open
+2026-04-27 16:47:47,520 - ERROR - Failed to send a request to Slack API server: <urlopen error [Errno 11001] getaddrinfo failed>
+2026-04-27 16:47:47,520 - ERROR - Failed to check the current session or reconnect to the server (session id: 25dcc982-0350-43db-b180-7044b5764193, error: URLError, message: <urlopen error [Errno 11001] getaddrinfo failed>)
+2026-04-27 16:47:57,526 - INFO - The session seems to be already closed. Reconnecting... (session id: 25dcc982-0350-43db-b180-7044b5764193)
+2026-04-27 16:47:57,527 - INFO - Connecting to a new endpoint...
+2026-04-27 16:47:57,530 - ERROR - Failed to send a request to Slack API server: <urlopen error [Errno 11001] getaddrinfo failed>
+2026-04-27 16:47:58,060 - INFO - Going to retry the same request: POST https://slack.com/api/apps.connections.open
+2026-04-27 16:47:58,063 - ERROR - Failed to send a request to Slack API server: <urlopen error [Errno 11001] getaddrinfo failed>
+2026-04-27 16:47:58,063 - ERROR - Failed to check the current session or reconnect to the server (session id: 25dcc982-0350-43db-b180-7044b5764193, error: URLError, message: <urlopen error [Errno 11001] getaddrinfo failed>)
+2026-04-27 16:48:08,066 - INFO - The session seems to be already closed. Reconnecting... (session id: 25dcc982-0350-43db-b180-7044b5764193)
+2026-04-27 16:48:08,067 - INFO - Connecting to a new endpoint...
+2026-04-27 16:48:08,067 - ERROR - Failed to send a request to Slack API server: <urlopen error [Errno 11001] getaddrinfo failed>
+2026-04-27 16:48:09,498 - INFO - Going to retry the same request: POST https://slack.com/api/apps.connections.open
+2026-04-27 16:48:09,502 - ERROR - Failed to send a request to Slack API server: <urlopen error [Errno 11001] getaddrinfo failed>
+2026-04-27 16:48:09,504 - ERROR - Failed to check the current session or reconnect to the server (session id: 25dcc982-0350-43db-b180-7044b5764193, error: URLError, message: <urlopen error [Errno 11001] getaddrinfo failed>)
+2026-04-27 16:48:19,505 - INFO - The session seems to be already closed. Reconnecting... (session id: 25dcc982-0350-43db-b180-7044b5764193)
+2026-04-27 16:48:19,505 - INFO - Connecting to a new endpoint...
+2026-04-27 16:48:31,562 - ERROR - Failed to send a request to Slack API server: <urlopen error [Errno 11001] getaddrinfo failed>
+2026-04-27 16:48:32,569 - INFO - Going to retry the same request: POST https://slack.com/api/apps.connections.open
+2026-04-27 16:48:32,569 - ERROR - Failed to send a request to Slack API server: <urlopen error [Errno 11001] getaddrinfo failed>
+2026-04-27 16:48:32,569 - ERROR - Failed to check the current session or reconnect to the server (session id: 25dcc982-0350-43db-b180-7044b5764193, error: URLError, message: <urlopen error [Errno 11001] getaddrinfo failed>)
+2026-04-27 16:48:42,587 - INFO - The session seems to be already closed. Reconnecting... (session id: 25dcc982-0350-43db-b180-7044b5764193)
+2026-04-27 16:48:42,589 - INFO - Connecting to a new endpoint...
+2026-04-27 16:48:54,634 - ERROR - Failed to send a request to Slack API server: <urlopen error [Errno 11001] getaddrinfo failed>
+2026-04-27 16:48:55,190 - INFO - Going to retry the same request: POST https://slack.com/api/apps.connections.open
+2026-04-27 16:48:55,192 - ERROR - Failed to send a request to Slack API server: <urlopen error [Errno 11001] getaddrinfo failed>
+2026-04-27 16:48:55,192 - ERROR - Failed to check the current session or reconnect to the server (session id: 25dcc982-0350-43db-b180-7044b5764193, error: URLError, message: <urlopen error [Errno 11001] getaddrinfo failed>)
+2026-04-27 16:49:05,198 - INFO - The session seems to be already closed. Reconnecting... (session id: 25dcc982-0350-43db-b180-7044b5764193)
+2026-04-27 16:49:05,198 - INFO - Connecting to a new endpoint...
+2026-04-27 16:49:05,198 - ERROR - Failed to send a request to Slack API server: <urlopen error [Errno 11001] getaddrinfo failed>
+2026-04-27 16:49:06,099 - INFO - Going to retry the same request: POST https://slack.com/api/apps.connections.open
+2026-04-27 16:49:06,100 - ERROR - Failed to send a request to Slack API server: <urlopen error [Errno 11001] getaddrinfo failed>
+2026-04-27 16:49:06,100 - ERROR - Failed to check the current session or reconnect to the server (session id: 25dcc982-0350-43db-b180-7044b5764193, error: URLError, message: <urlopen error [Errno 11001] getaddrinfo failed>)
+2026-04-27 16:49:16,111 - INFO - The session seems to be already closed. Reconnecting... (session id: 25dcc982-0350-43db-b180-7044b5764193)
+2026-04-27 16:49:16,112 - INFO - Connecting to a new endpoint...
+2026-04-27 16:49:28,154 - ERROR - Failed to send a request to Slack API server: <urlopen error [Errno 11001] getaddrinfo failed>
+2026-04-27 16:49:29,449 - INFO - Going to retry the same request: POST https://slack.com/api/apps.connections.open
+2026-04-27 16:49:29,450 - ERROR - Failed to send a request to Slack API server: <urlopen error [Errno 11001] getaddrinfo failed>
+2026-04-27 16:49:29,452 - ERROR - Failed to check the current session or reconnect to the server (session id: 25dcc982-0350-43db-b180-7044b5764193, error: URLError, message: <urlopen error [Errno 11001] getaddrinfo failed>)
+2026-04-27 16:49:39,467 - INFO - The session seems to be already closed. Reconnecting... (session id: 25dcc982-0350-43db-b180-7044b5764193)
+2026-04-27 16:49:39,467 - INFO - Connecting to a new endpoint...
+2026-04-27 17:14:36,027 - ERROR - Failed to send a request to Slack API server: <urlopen error [Errno 11001] getaddrinfo failed>
+2026-04-27 17:14:37,306 - INFO - Going to retry the same request: POST https://slack.com/api/apps.connections.open
+2026-04-27 17:14:37,627 - ERROR - Failed to send a request to Slack API server: <urlopen error [Errno 11001] getaddrinfo failed>
+2026-04-27 17:14:37,804 - ERROR - Failed to check the current session or reconnect to the server (session id: 25dcc982-0350-43db-b180-7044b5764193, error: URLError, message: <urlopen error [Errno 11001] getaddrinfo failed>)
+2026-04-27 18:18:39,987 - INFO - The session seems to be already closed. Reconnecting... (session id: 25dcc982-0350-43db-b180-7044b5764193)
+2026-04-27 18:18:40,000 - INFO - Connecting to a new endpoint...
+2026-04-27 18:18:40,098 - ERROR - Failed to send a request to Slack API server: <urlopen error [Errno 11001] getaddrinfo failed>
+2026-04-27 18:18:41,192 - INFO - Going to retry the same request: POST https://slack.com/api/apps.connections.open
+2026-04-27 18:18:41,197 - ERROR - Failed to send a request to Slack API server: <urlopen error [Errno 11001] getaddrinfo failed>
+2026-04-27 18:18:41,200 - ERROR - Failed to check the current session or reconnect to the server (session id: 25dcc982-0350-43db-b180-7044b5764193, error: URLError, message: <urlopen error [Errno 11001] getaddrinfo failed>)
+2026-04-27 18:18:51,208 - INFO - The session seems to be already closed. Reconnecting... (session id: 25dcc982-0350-43db-b180-7044b5764193)
+2026-04-27 18:18:51,208 - INFO - Connecting to a new endpoint...
+2026-04-27 18:18:51,212 - ERROR - Failed to send a request to Slack API server: <urlopen error [Errno 11001] getaddrinfo failed>
+2026-04-27 18:18:51,948 - INFO - Going to retry the same request: POST https://slack.com/api/apps.connections.open
+2026-04-27 18:18:58,812 - INFO - The connection has been closed (session id: 25dcc982-0350-43db-b180-7044b5764193)
+2026-04-27 18:18:58,862 - INFO - A new session has been established (session id: 0694d024-e159-4ee4-a9c0-d49196359474)
+2026-04-27 18:18:58,863 - INFO - Connected to a new endpoint...
+2026-04-27 18:18:59,026 - INFO - Stopped receiving messages from a connection (session id: 25dcc982-0350-43db-b180-7044b5764193)
+2026-04-27 18:18:59,193 - INFO - Starting to receive messages from a new connection (session id: 0694d024-e159-4ee4-a9c0-d49196359474)
+2026-04-27 18:18:59,377 - INFO - Connecting to a new endpoint...
+2026-04-27 18:19:02,376 - INFO - The connection has been closed (session id: 0694d024-e159-4ee4-a9c0-d49196359474)
+2026-04-27 18:19:02,378 - INFO - A new session has been established (session id: 9ce14f48-dc34-4136-9a63-369a84d44e24)
+2026-04-27 18:19:02,378 - INFO - Connected to a new endpoint...
+2026-04-27 18:19:02,390 - INFO - Stopped receiving messages from a connection (session id: 0694d024-e159-4ee4-a9c0-d49196359474)
+2026-04-27 18:19:02,496 - INFO - Starting to receive messages from a new connection (session id: 9ce14f48-dc34-4136-9a63-369a84d44e24)
+2026-04-27 18:19:02,502 - INFO - Connecting to a new endpoint...
+2026-04-27 18:19:05,509 - INFO - The connection has been closed (session id: 9ce14f48-dc34-4136-9a63-369a84d44e24)
+2026-04-27 18:19:05,511 - INFO - A new session has been established (session id: 6ad5d427-25f1-459a-8615-2147bc4b9a41)
+2026-04-27 18:19:05,513 - INFO - Connected to a new endpoint...
+2026-04-27 18:19:05,520 - INFO - Stopped receiving messages from a connection (session id: 9ce14f48-dc34-4136-9a63-369a84d44e24)
+2026-04-27 18:19:05,625 - INFO - Starting to receive messages from a new connection (session id: 6ad5d427-25f1-459a-8615-2147bc4b9a41)
+2026-04-27 18:19:05,629 - INFO - Connecting to a new endpoint...
+2026-04-27 18:19:08,635 - INFO - The connection has been closed (session id: 6ad5d427-25f1-459a-8615-2147bc4b9a41)
+2026-04-27 18:19:08,637 - INFO - A new session has been established (session id: bebbd713-d422-475e-9b3d-f83b4e6d1042)
+2026-04-27 18:19:08,637 - INFO - Connected to a new endpoint...
+2026-04-27 18:19:08,647 - INFO - Stopped receiving messages from a connection (session id: 6ad5d427-25f1-459a-8615-2147bc4b9a41)
+2026-04-27 18:19:08,748 - INFO - Starting to receive messages from a new connection (session id: bebbd713-d422-475e-9b3d-f83b4e6d1042)
+2026-04-27 18:19:08,750 - INFO - Connecting to a new endpoint...
+2026-04-27 18:19:11,762 - INFO - The connection has been closed (session id: bebbd713-d422-475e-9b3d-f83b4e6d1042)
+2026-04-27 18:19:11,763 - INFO - A new session has been established (session id: ae16d63d-465a-4ba7-baba-261ca33d669b)
+2026-04-27 18:19:11,764 - INFO - Connected to a new endpoint...
+2026-04-27 18:19:11,774 - INFO - Stopped receiving messages from a connection (session id: bebbd713-d422-475e-9b3d-f83b4e6d1042)
+2026-04-27 18:19:11,877 - INFO - Starting to receive messages from a new connection (session id: ae16d63d-465a-4ba7-baba-261ca33d669b)
+2026-04-27 19:50:35,693 - INFO - Bot token loaded: xoxb-10940...
+2026-04-27 19:50:35,695 - INFO - App token loaded: xapp-1-A0A...
+2026-04-27 19:50:38,916 - INFO - GitHub scrape request called
+2026-04-27 19:50:38,933 - INFO - Socket handler created successfully
+2026-04-27 19:50:39,386 - INFO - A new session has been established (session id: 76f5cf84-33a1-41b4-806b-422960d5028f)
+2026-04-27 19:50:39,387 - INFO - Bolt app is running!
+2026-04-27 19:50:39,484 - INFO - Starting to receive messages from a new connection (session id: 76f5cf84-33a1-41b4-806b-422960d5028f)
+2026-04-27 19:52:23,758 - INFO - Bot token loaded: xoxb-10940...
+2026-04-27 19:52:23,760 - INFO - App token loaded: xapp-1-A0A...
+2026-04-27 19:52:26,539 - INFO - GitHub scrape request called
+2026-04-27 19:52:26,556 - INFO - Socket handler created successfully
+2026-04-27 19:52:26,993 - INFO - A new session has been established (session id: 476f3538-7efe-495e-bf37-ea7a2680665e)
+2026-04-27 19:52:26,993 - INFO - Bolt app is running!
+2026-04-27 19:52:27,001 - INFO - Starting to receive messages from a new connection (session id: 476f3538-7efe-495e-bf37-ea7a2680665e)
+2026-04-27 19:56:49,317 - INFO - Bot token loaded: xoxb-10940...
+2026-04-27 19:56:49,319 - INFO - App token loaded: xapp-1-A0A...
+2026-04-27 19:56:53,364 - INFO - GitHub scrape request called
+2026-04-27 19:56:53,522 - INFO - Socket handler created successfully
+2026-04-27 19:56:53,995 - INFO - A new session has been established (session id: 282dc5f1-4a5b-4297-ad78-1bdbcb9ce409)
+2026-04-27 19:56:53,995 - INFO - Bolt app is running!
+2026-04-27 19:56:54,067 - INFO - Starting to receive messages from a new connection (session id: 282dc5f1-4a5b-4297-ad78-1bdbcb9ce409)
+2026-04-27 20:01:57,590 - INFO - Bot token loaded: xoxb-10940...
+2026-04-27 20:01:57,593 - INFO - App token loaded: xapp-1-A0A...
+2026-04-27 20:02:00,646 - INFO - GitHub scrape request called
+2026-04-27 20:02:00,664 - INFO - Socket handler created successfully
+2026-04-27 20:02:01,192 - INFO - A new session has been established (session id: 3f1d414d-e25a-44f4-8ced-f1486629f73a)
+2026-04-27 20:02:01,193 - INFO - Bolt app is running!
+2026-04-27 20:02:01,219 - INFO - Starting to receive messages from a new connection (session id: 3f1d414d-e25a-44f4-8ced-f1486629f73a)
