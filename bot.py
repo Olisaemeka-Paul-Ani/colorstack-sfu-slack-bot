@@ -245,15 +245,14 @@ def parse_jobs(string):
             })
         i=i+1
     return output
+schedule.every().monday.at("09:00").do(post_motivational_image)
+schedule.every().thursday.at("09:00").do(post_motivational_image)
+schedule.every().day.at("10:00").do(lambda: post_leetcode_question(fetch_leetcode_daily()))
+scheduler_thread = threading.Thread(target=run_scheduler, daemon=True)
+scheduler_thread.start()
+
 if __name__ == "__main__":
-    markdown = fetch_github_jobs()
-    jobs = parse_jobs(markdown)
-    print(jobs[0])
-    schedule.every().monday.at("09:00").do(post_motivational_image)
-    schedule.every().thursday.at("09:00").do(post_motivational_image)
-    schedule.every().day.at("10:00").do(lambda: post_leetcode_question(fetch_leetcode_daily()))
-    scheduler_thread = threading.Thread(target=run_scheduler, daemon=True)
-    scheduler_thread.start()
+    # Remove the test code (markdown/jobs lines)
     logging.info("⚡️ Bot starting in Socket Mode...")
     try:
         handler = SocketModeHandler(app, app_token)
