@@ -245,6 +245,25 @@ def parse_jobs(string):
             })
         i=i+1
     return output
+
+
+def job_exists(role,company,location):
+    response = supabase.table("jobs")\
+    .select("id")\
+    .eq("company", company)\
+    .eq("role",role)\
+    .eq("location", location)\
+    .limit(1)\
+    .execute()
+
+    return len(response.data)>0
+
+
+def store_job(job_dict):
+    supabase.table("jobs").insert(job_dict).execute()
+    logging.info("Job stored in database")
+
+
 # Scheduler runs at module level so systemd picks it up correctly
 schedule.every().monday.at("09:00").do(post_motivational_image)
 schedule.every().thursday.at("09:00").do(post_motivational_image)
