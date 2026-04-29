@@ -753,3 +753,9 @@ The server responded with: {'ok': False, 'error': 'user_not_found'}
 2026-04-27 20:02:01,192 - INFO - A new session has been established (session id: 3f1d414d-e25a-44f4-8ced-f1486629f73a)
 2026-04-27 20:02:01,193 - INFO - Bolt app is running!
 2026-04-27 20:02:01,219 - INFO - Starting to receive messages from a new connection (session id: 3f1d414d-e25a-44f4-8ced-f1486629f73a)
+2026-04-28 19:05:24,107 - INFO - Bot token loaded: xoxb-10940...
+2026-04-28 19:05:24,111 - INFO - App token loaded: xapp-1-A0A...
+2026-04-28 19:05:26,883 - INFO - Socket handler created successfully
+2026-04-28 19:05:27,714 - INFO - A new session has been established (session id: cb2736a1-cc9d-407e-bffd-4e364b5a913b)
+2026-04-28 19:05:27,715 - INFO - Bolt app is running!
+2026-04-28 19:05:27,823 - INFO - Starting to receive messages from a new connection (session id: cb2736a1-cc9d-407e-bffd-4e364b5a913b)

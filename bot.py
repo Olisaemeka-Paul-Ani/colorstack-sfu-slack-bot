@@ -245,6 +245,7 @@ def parse_jobs(string):
             })
         i=i+1
     return output
+# Scheduler runs at module level so systemd picks it up correctly
 schedule.every().monday.at("09:00").do(post_motivational_image)
 schedule.every().thursday.at("09:00").do(post_motivational_image)
 schedule.every().day.at("10:00").do(lambda: post_leetcode_question(fetch_leetcode_daily()))
