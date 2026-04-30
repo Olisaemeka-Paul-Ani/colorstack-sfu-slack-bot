@@ -759,3 +759,77 @@ The server responded with: {'ok': False, 'error': 'user_not_found'}
 2026-04-28 19:05:27,714 - INFO - A new session has been established (session id: cb2736a1-cc9d-407e-bffd-4e364b5a913b)
 2026-04-28 19:05:27,715 - INFO - Bolt app is running!
 2026-04-28 19:05:27,823 - INFO - Starting to receive messages from a new connection (session id: cb2736a1-cc9d-407e-bffd-4e364b5a913b)
+2026-04-30 13:02:22,160 - INFO - Bot token loaded: xoxb-10940...
+2026-04-30 13:02:22,164 - INFO - App token loaded: xapp-1-A0A...
+2026-04-30 13:02:23,990 - INFO - Socket handler created successfully
+2026-04-30 13:02:24,619 - INFO - A new session has been established (session id: 22d4c77c-c32b-4a7f-9cc8-d0d1e454a465)
+2026-04-30 13:02:24,619 - INFO - Bolt app is running!
+2026-04-30 13:02:24,660 - INFO - Starting to receive messages from a new connection (session id: 22d4c77c-c32b-4a7f-9cc8-d0d1e454a465)
+2026-04-30 13:04:13,648 - INFO - HTTP Request: POST https://vjfnhzaelswqfldoibpo.supabase.co/rest/v1/solves "HTTP/2 201 Created"
+2026-04-30 13:04:13,667 - INFO - Recorded Supabase entry for U0AUY4AKURE
+2026-04-30 13:04:13,673 - ERROR - Failed to run listener function (error: 'message_ts')
+Traceback (most recent call last):
+  File "C:\Users\olian\Downloads\colorstack-slack-bot\venv312\Lib\site-packages\slack_bolt\listener\thread_runner.py", line 120, in run_ack_function_asynchronously
+    listener.run_ack_function(request=request, response=response)
+  File "C:\Users\olian\Downloads\colorstack-slack-bot\venv312\Lib\site-packages\slack_bolt\listener\custom_listener.py", line 53, in run_ack_function
+    return self.ack_function(
+           ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\olian\Downloads\colorstack-slack-bot\bot.py", line 113, in handle_command
+    timestamp=body["message_ts"]
+              ~~~~^^^^^^^^^^^^^^
+KeyError: 'message_ts'
+2026-04-30 13:14:02,118 - INFO - Bot token loaded: xoxb-10940...
+2026-04-30 13:14:02,119 - INFO - App token loaded: xapp-1-A0A...
+2026-04-30 13:14:04,143 - INFO - Socket handler created successfully
+2026-04-30 13:14:04,640 - INFO - A new session has been established (session id: 2af0604b-0ee6-4447-9db9-091c723c68c6)
+2026-04-30 13:14:04,640 - INFO - Bolt app is running!
+2026-04-30 13:14:04,681 - INFO - Starting to receive messages from a new connection (session id: 2af0604b-0ee6-4447-9db9-091c723c68c6)
+2026-04-30 13:18:12,056 - INFO - Leaderboard request called by U0AUY4AKURE
+2026-04-30 13:18:13,950 - INFO - HTTP Request: GET https://vjfnhzaelswqfldoibpo.supabase.co/rest/v1/solves?select=%2A "HTTP/2 200 OK"
+2026-04-30 13:18:24,303 - INFO - Leaderboard request called by U0AUY4AKURE
+2026-04-30 13:18:24,443 - INFO - HTTP Request: GET https://vjfnhzaelswqfldoibpo.supabase.co/rest/v1/solves?select=%2A "HTTP/2 200 OK"
+2026-04-30 13:20:19,757 - INFO - HTTP Request: POST https://vjfnhzaelswqfldoibpo.supabase.co/rest/v1/solves "HTTP/2 201 Created"
+2026-04-30 13:20:19,778 - INFO - Recorded Supabase entry for U0AUY4AKURE
+2026-04-30 13:20:20,132 - INFO - Sent solved confirmation reaction to U0AUY4AKURE
+2026-04-30 13:20:40,001 - INFO - HTTP Request: POST https://vjfnhzaelswqfldoibpo.supabase.co/rest/v1/solves "HTTP/2 201 Created"
+2026-04-30 13:20:40,001 - INFO - Recorded Supabase entry for U0AUY4AKURE
+2026-04-30 13:20:40,369 - INFO - Sent solved confirmation reaction to U0AUY4AKURE
+2026-04-30 13:21:58,822 - INFO - Bot token loaded: xoxb-10940...
+2026-04-30 13:21:58,823 - INFO - App token loaded: xapp-1-A0A...
+2026-04-30 13:22:00,991 - INFO - Socket handler created successfully
+2026-04-30 13:22:01,464 - INFO - A new session has been established (session id: 9c5a2364-f67b-47cf-bb5a-b3b504eab92d)
+2026-04-30 13:22:01,464 - INFO - Bolt app is running!
+2026-04-30 13:22:01,522 - INFO - Starting to receive messages from a new connection (session id: 9c5a2364-f67b-47cf-bb5a-b3b504eab92d)
+2026-04-30 13:22:47,573 - INFO - HTTP Request: POST https://vjfnhzaelswqfldoibpo.supabase.co/rest/v1/solves "HTTP/2 201 Created"
+2026-04-30 13:22:47,677 - INFO - Recorded Supabase entry for U0AUY4AKURE
+2026-04-30 13:22:48,059 - INFO - Sent solved confirmation reaction to U0AUY4AKURE
+2026-04-30 13:24:45,832 - INFO - HTTP Request: POST https://vjfnhzaelswqfldoibpo.supabase.co/rest/v1/solves "HTTP/2 201 Created"
+2026-04-30 13:24:45,839 - INFO - Recorded Supabase entry for U0AUY4AKURE
+2026-04-30 13:24:46,203 - INFO - Sent solved confirmation reaction to U0AUY4AKURE
+2026-04-30 13:27:10,863 - INFO - HTTP Request: POST https://vjfnhzaelswqfldoibpo.supabase.co/rest/v1/solves "HTTP/2 201 Created"
+2026-04-30 13:27:10,869 - INFO - Recorded Supabase entry for U0AUY4AKURE
+2026-04-30 13:27:11,278 - INFO - Sent solved confirmation reaction to U0AUY4AKURE
+2026-04-30 13:27:23,946 - INFO - HTTP Request: POST https://vjfnhzaelswqfldoibpo.supabase.co/rest/v1/solves "HTTP/2 201 Created"
+2026-04-30 13:27:23,948 - INFO - Recorded Supabase entry for U0AUY4AKURE
+2026-04-30 13:27:24,319 - INFO - Sent solved confirmation reaction to U0AUY4AKURE
+2026-04-30 13:27:27,656 - INFO - HTTP Request: POST https://vjfnhzaelswqfldoibpo.supabase.co/rest/v1/solves "HTTP/2 201 Created"
+2026-04-30 13:27:27,656 - INFO - Recorded Supabase entry for U0AUY4AKURE
+2026-04-30 13:27:28,009 - INFO - Sent solved confirmation reaction to U0AUY4AKURE
+2026-04-30 13:27:34,628 - INFO - HTTP Request: POST https://vjfnhzaelswqfldoibpo.supabase.co/rest/v1/solves "HTTP/2 201 Created"
+2026-04-30 13:27:34,628 - INFO - Recorded Supabase entry for U0AUY4AKURE
+2026-04-30 13:27:35,025 - INFO - Sent solved confirmation reaction to U0AUY4AKURE
+2026-04-30 13:27:46,922 - INFO - HTTP Request: POST https://vjfnhzaelswqfldoibpo.supabase.co/rest/v1/solves "HTTP/2 201 Created"
+2026-04-30 13:27:46,926 - INFO - Recorded Supabase entry for U0AUY4AKURE
+2026-04-30 13:27:47,320 - INFO - Sent solved confirmation reaction to U0AUY4AKURE
+2026-04-30 13:28:08,787 - INFO - HTTP Request: POST https://vjfnhzaelswqfldoibpo.supabase.co/rest/v1/solves "HTTP/2 201 Created"
+2026-04-30 13:28:08,790 - INFO - Recorded Supabase entry for U0AUY4AKURE
+2026-04-30 13:28:09,152 - INFO - Sent solved confirmation reaction to U0AUY4AKURE
+2026-04-30 13:28:12,707 - INFO - HTTP Request: POST https://vjfnhzaelswqfldoibpo.supabase.co/rest/v1/solves "HTTP/2 201 Created"
+2026-04-30 13:28:12,709 - INFO - Recorded Supabase entry for U0AUY4AKURE
+2026-04-30 13:28:13,177 - INFO - Sent solved confirmation reaction to U0AUY4AKURE
+2026-04-30 13:28:18,709 - INFO - HTTP Request: POST https://vjfnhzaelswqfldoibpo.supabase.co/rest/v1/solves "HTTP/2 201 Created"
+2026-04-30 13:28:18,711 - INFO - Recorded Supabase entry for U0AUY4AKURE
+2026-04-30 13:28:19,069 - INFO - Sent solved confirmation reaction to U0AUY4AKURE
+2026-04-30 13:28:42,499 - INFO - HTTP Request: POST https://vjfnhzaelswqfldoibpo.supabase.co/rest/v1/solves "HTTP/2 201 Created"
+2026-04-30 13:28:42,501 - INFO - Recorded Supabase entry for U0AUY4AKURE
+2026-04-30 13:28:42,855 - INFO - Sent solved confirmation reaction to U0AUY4AKURE

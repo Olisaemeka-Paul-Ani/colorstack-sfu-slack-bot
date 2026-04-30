@@ -1,53 +1,98 @@
 # ColorStack SFU Slack Bot
 
-Slack Bot built using GraphQL, Python, Supabase and LeetCode API for automation of various tasks such as LeetCode question postings, community engagement, and Job Scraping
+A Slack bot built with Python, Slack Bolt, Supabase, and the LeetCode GraphQL API — automating LeetCode accountability, motivational content, and Canadian tech internship job posting for the ColorStack SFU chapter at Simon Fraser University. Deployed 24/7 on AWS EC2.
 
-## Implemented Features
+---
 
-- **New Member Welcome**: Automatically sends personalized DM to members when they join a channel.
+## Architecture
 
-- **Daily LeetCode Question**: Posts the LeetCode daily challenge to #leetcode-grind every morning at 10 AM with a motivational quote.
+![ColorStack SFU Slack Bot – Architecture Overview](assets/architecture.png)
 
-- **Error Handling & Logging**: Gracefully handles API failures and logs all events to `bot.log` for debugging
+---
 
-- **Biweekly motivational quote posts to #motivations**: Automated sendding of motivational images to the Slack's dedicated channel, boosting team morale. 
+## Features
 
-- **Supabase Integration** Uses a custom command to log all solved questions into a PostGreSQL database, allowing for persistence and "immortality" of data. triggered by typing [/leetcode solved Easy|Medium|Hard] after submitting a question to the #leetcode-grind channel
+- **New Member Welcome** — Sends a personalized DM to any user who joins a monitored channel.
+- **Daily LeetCode Challenge** — Fetches and posts the LeetCode daily question to `#leetcode-grind` every day at 10:00 AM UTC via the LeetCode GraphQL API.
+- **Solve Logging** — `/leetcode [problem] [difficulty]` logs a completed solve to Supabase and posts a confirmation to `#leetcode-grind`.
+- **Leaderboard** — `/leetcode leaderboard` queries Supabase and posts a ranked leaderboard to `#leetcode-grind`.
+- **Invalid Command Handling** — Sends a helpful DM when an empty or unrecognized `/leetcode` command is used.
+- **Motivational Image Posts** — Posts a random image from `assets/motivational_images/` to `#motivations` every Monday and Thursday at 09:00 AM UTC.
+- **Canadian Internship Job Scraping** — Scrapes the Canadian Tech Internships 2026 GitHub repo, deduplicates via Supabase, and posts new listings to `#general` four times daily.
+- **Error Handling & Logging** — All events, errors, and scheduled actions are logged to `bot.log`.
 
-- **LeetCode leaderboard tracking**: Uses custom commands to generate a leaderboard from data previously uploaded to Supabase, triggered by typing [/leetcode leaderboard].
+---
 
-- **Error Handling for invalid and empty commands**: A warm message sent to the user's direct messages whenever an invalid command (like /leetcode fake-command) or an empty command (/leetcode) has been sent.
+## Tech Stack
 
-- **AWS EC2 deployment**: Slack Bot deployed on an Amazon Web Services EC2 server for 24/7 uptime.
+| Layer | Technology |
+|---|---|
+| Language | Python 3.12 |
+| Slack Integration | Slack Bolt (Socket Mode) |
+| Database | Supabase (PostgreSQL) |
+| Hosting | AWS EC2 t3.micro — Ubuntu 24.04 |
+| Process Management | systemd |
+| Scheduling | `schedule` + `threading` |
+| HTTP | `requests` |
+| Config | `python-dotenv` |
 
+---
 
 ## Setup
 
-  1. Clone the repository: `git clone https://github.com/Olisaemeka-Paul-Ani/colorstack-sfu-slack-bot.git`
-  2. Install dependencies: `pip install -r requirements.txt`
-  3. Create a `.env` file with your Slack tokens:
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/Olisaemeka-Paul-Ani/colorstack-sfu-slack-bot.git
+   cd colorstack-sfu-slack-bot
+   ```
+
+2. Create and activate a virtual environment:
+   ```bash
+   python -m venv venv
+   source venv/bin/activate  # Windows: venv\Scripts\activate
+   ```
+
+3. Install dependencies:
+   ```bash
+   pip install -r requirements.txt
+   ```
+
+4. Create a `.env` file in the project root:
+   ```
+   SLACK_BOT_TOKEN=xoxb-...
+   SLACK_APP_TOKEN=xapp-...
+   SUPABASE_URL=https://your-project.supabase.co
+   SUPABASE_KEY=your-service-role-key
+   LEETCODE_CHANNEL_ID=C...
+   MOTIVATIONS_CHANNEL_ID=C...
+   GENERAL_CHANNEL_ID=C...
+   ```
+
+5. Run the bot:
+   ```bash
+   python main.py
+   ```
+
+---
+
+## Deployment (AWS EC2)
+
+The bot runs as a systemd service for 24/7 uptime.
+
+```bash
+# Check service status
+sudo systemctl status colorstack-bot.service
+
+# Restart after a code update
+sudo systemctl restart colorstack-bot.service
+
+# Tail live logs
+journalctl -u colorstack-bot.service -f
 ```
-   SLACK_BOT_TOKEN=your_bot_token
-   SLACK_APP_TOKEN=your_app_token
-```
-## Tech Stack
 
-- **Python**
-- **Slack Bolt SDK**
-- **Slack Socket Mode**
-- **LeetCode GraphQL API**
-- **Python logging module**
-- **schedule library (for daily scheduling)**
--**Supabase (for data persistence)**
-- **AWS EC2 deployment for 24/7 uptime**
-
-## Roadmap
-
-- [ ] Job scraping and posting for internship/new grad roles
-- [ ] Reaction-based channel interactions
-
+---
 
 ## Author
-   
-   **Olisaemeka Paul Ani**  
-   [LinkedIn](https://www.linkedin.com/in/olisaemeka-paul-ani/) | [GitHub](https://github.com/Olisaemeka-Paul-Ani)
+
+**Olisaemeka Paul Ani**
+[LinkedIn](https://www.linkedin.com/in/olisaemeka-paul-ani/) | [GitHub](https://github.com/Olisaemeka-Paul-Ani)
