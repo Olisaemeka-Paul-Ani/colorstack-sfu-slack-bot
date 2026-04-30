@@ -106,7 +106,14 @@ def handle_command(ack, body, client):
         text=format_leaderboard(client, calculate_leaderboard(get_leaderboard()))
         )
     elif body["text"].split()[1] == "Easy" or  body["text"].split()[1] == "Medium" or body["text"].split()[1] == "Hard":
-        log_solve(body["user_id"],body["text"].split()[1])
+        log_solve(body["user_id"], body["text"].split()[1])
+        user_info = client.users_info(user = body["user_id"])
+        user_name = user_info["user"]["real_name"]
+        client.chat_postMessage(
+            channel="leetcode-grind",
+            text=f"✅ Solve logged! for {user_name}"
+        )
+        logging.info(f"Sent solved confirmation reaction to {body['user_id']}")
     else:
         logging.info(f"Invalid command sent by{body["user_id"]}")
         client.chat_postMessage(
