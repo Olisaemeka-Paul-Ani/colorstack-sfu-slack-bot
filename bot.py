@@ -236,12 +236,14 @@ def parse_jobs(string):
                 continue
             role = parts[2].strip()
             location = parts[3].strip()
+            apply_url = parts[4].strip()
             date_posted = parts[5].strip()
             output.append({
                 "company": company,
                 "role":role,
                 "location": location,
-                "date_posted":date_posted
+                "date_posted":date_posted,
+                "apply_url":apply_url
             })
         i=i+1
     return output
@@ -262,9 +264,38 @@ def job_exists(role,company,location):
 def store_job(job_dict):
     supabase.table("jobs").insert(job_dict).execute()
     logging.info("Job stored in database")
+    return
+
+def scrape_and_post_jobs():
+    jobList = parse_jobs(fetch_github_jobs())
+    i=0
+    while i < len(jobList):
+        try:
+            if not job_exists(jobList[i]["role"],jobList[i]["company"],jobList[i]["location"]):
+                message = f"""🚨NEW JOB INCOMING!🚨
+                            *Company: * {jobList[i]["company"]}
+                            *role*:     {jobList[i]["role"]}
+                            *location:* {jobList[i]["location"]}
+                            *apply_url:*  {jobList[i]["apply_url"]} 
+                                                """
+                app.client.chat_postMessage(
+                    channel="general",
+                    text=message
+                    )
+                store_job(jobList[i])
+            i=i+1
+        except Exception as e:
+            logging.info("ERROR: Could not properly scrape")
+    return
+        
+    
 
 
 # Scheduler runs at module level so systemd picks it up correctly
+schedule.every().day.at("05:00").do(scrape_and_post_jobs)   # 12am EST
+schedule.every().day.at("16:00").do(scrape_and_post_jobs)   # 11am EST
+schedule.every().day.at("23:00").do(scrape_and_post_jobs)   # 6pm EST
+schedule.every().day.at("03:00").do(scrape_and_post_jobs)   # 10pm EST
 schedule.every().monday.at("09:00").do(post_motivational_image)
 schedule.every().thursday.at("09:00").do(post_motivational_image)
 schedule.every().day.at("10:00").do(lambda: post_leetcode_question(fetch_leetcode_daily()))
