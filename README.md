@@ -17,7 +17,7 @@ A Slack bot built with Python, Slack Bolt, Supabase, and the LeetCode GraphQL AP
 - **Solve Logging** — `/leetcode [problem] [difficulty]` logs a completed solve to Supabase and posts a confirmation to `#leetcode-grind`.
 - **Leaderboard** — `/leetcode leaderboard` queries Supabase and posts a ranked leaderboard to `#leetcode-grind`.
 - **Invalid Command Handling** — Sends a helpful DM when an empty or unrecognized `/leetcode` command is used.
-- **Motivational Image Posts** — Posts a random image from `assets/motivational_images/` to `#motivations` every Monday and Thursday at 09:00 AM UTC.
+- **Motivational Image Posts** — Posts selected motivational images/media from `assets/motivational_images/` to `#motivations` every Monday and Thursday at 09:00 AM UTC.
 - **Canadian Internship Job Scraping** — Scrapes the Canadian Tech Internships 2026 GitHub repo, deduplicates via Supabase, and posts new listings to `#general` four times daily.
 - **Error Handling & Logging** — All events, errors, and scheduled actions are logged to `bot.log`.
 
