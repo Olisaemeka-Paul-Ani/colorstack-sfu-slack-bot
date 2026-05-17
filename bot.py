@@ -176,45 +176,52 @@ def fetch_leetcode_daily():
 
 
 def post_leetcode_question(hMap):
-    if not hMap:
-        app.client.chat_postMessage(
-            channel="leetcode-grind",
-            text="LeetCode API decided to ghost me. In that case have a rest guys, we try again tomorrow."
-        )
-        return
-    title = hMap["title"]
-    link = hMap["link"]
-    difficulty = hMap["difficulty"]
-    message = f"""
-    *Motivational Quote*: {random.choice(MOTIVATIONAL_QUOTES)}
-    *Today's LeetCode Question -- {difficulty}*
-    {title}
-    {link}
+    try:
+        if not hMap:
+            app.client.chat_postMessage(
+                channel="leetcode-grind",
+                text="LeetCode API decided to ghost me. In that case have a rest guys, we try again tomorrow."
+            )
+            return
+        title = hMap["title"]
+        link = hMap["link"]
+        difficulty = hMap["difficulty"]
+        message = f"""
+        *Motivational Quote*: {random.choice(MOTIVATIONAL_QUOTES)}
+        *Today's LeetCode Question -- {difficulty}*
+        {title}
+        {link}
 
-                        """
-    app.client.chat_postMessage(
-    channel="leetcode-grind",
-    text=message
-    )
-    return message
+                            """
+        app.client.chat_postMessage(
+        channel="leetcode-grind",
+        text=message
+        )
+        return message
+    except:
+        logging.info(f"Question posting action failed")
 
 
 
 
 
 def post_motivational_image():
-    image_folder = "assets/motivational_images"
-    image_files = os.listdir(image_folder)
-    motivation_post = random.choice(image_files)
-    motivation_post_path = os.path.join(image_folder, motivation_post)
-    app.client.files_upload_v2(
-        channel="C0AUHLA18DV",  # Your #motivations channel
-        file= motivation_post_path,
-        title="Motivational post incoming!!!"
-    )
-    
-    logging.info(f"Sent motivational message to #motivation")
-    return
+    try:
+        image_folder = "assets/motivational_images"
+        image_files = os.listdir(image_folder)
+        motivation_post = random.choice(image_files)
+        motivation_post_path = os.path.join(image_folder, motivation_post)
+        app.client.files_upload_v2(
+            channel="C0AUHLA18DV",  # Your #motivations channel
+            file= motivation_post_path,
+            title="Motivational post incoming!!!"
+        )
+        
+        logging.info(f"Sent motivational message to #motivation")
+        return
+    except:
+        logging.info(f"Motivational message posting failed")
+        return
 
 
 def run_scheduler():
